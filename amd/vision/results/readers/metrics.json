@@ -1,0 +1,6820 @@
+{
+  "machine": {
+    "host": "AsusG14",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "processor": "",
+    "device": "CPU",
+    "python": "3.12.14"
+  },
+  "metrics": {
+    "train": {
+      "PRESSURE_PSI": {
+        "count": 47,
+        "measurable_count": 44,
+        "low_confidence_rate": 0.14893617021276595,
+        "agrees_accuracy_all_twins": 0.9090909090909091,
+        "agrees_coverage": 0.9090909090909091,
+        "agrees_accuracy_decided": 1.0,
+        "unreadable_correctly_flagged_rate": 1.0,
+        "agrees_accuracy_by_variant": {
+          "true": 0.9090909090909091,
+          "perturbed": 0.9090909090909091
+        },
+        "latency_p50_ms": 220.06,
+        "latency_p95_ms": 302.14099999999985,
+        "mae_percent_fs": 0.28756983474029174,
+        "within_2_percent_fs": 1.0
+      },
+      "TEMPERATURE_C": {
+        "count": 55,
+        "measurable_count": 50,
+        "low_confidence_rate": 0.09090909090909091,
+        "agrees_accuracy_all_twins": 1.0,
+        "agrees_coverage": 1.0,
+        "agrees_accuracy_decided": 1.0,
+        "unreadable_correctly_flagged_rate": 1.0,
+        "agrees_accuracy_by_variant": {
+          "true": 1.0,
+          "perturbed": 1.0
+        },
+        "latency_p50_ms": 331.36,
+        "latency_p95_ms": 379.637,
+        "max_temperature_mae_c": 0.637126559134722,
+        "hotspot_center_error_px": 1.487322337216625
+      }
+    },
+    "heldout": {
+      "PRESSURE_PSI": {
+        "count": 17,
+        "measurable_count": 16,
+        "low_confidence_rate": 0.23529411764705882,
+        "agrees_accuracy_all_twins": 0.8125,
+        "agrees_coverage": 0.8125,
+        "agrees_accuracy_decided": 1.0,
+        "unreadable_correctly_flagged_rate": 1.0,
+        "agrees_accuracy_by_variant": {
+          "true": 1.0,
+          "perturbed": 0.625
+        },
+        "latency_p50_ms": 216.0,
+        "latency_p95_ms": 240.10399999999998,
+        "mae_percent_fs": 0.2138820882506691,
+        "within_2_percent_fs": 1.0
+      },
+      "TEMPERATURE_C": {
+        "count": 31,
+        "measurable_count": 30,
+        "low_confidence_rate": 0.03225806451612903,
+        "agrees_accuracy_all_twins": 1.0,
+        "agrees_coverage": 1.0,
+        "agrees_accuracy_decided": 1.0,
+        "unreadable_correctly_flagged_rate": 1.0,
+        "agrees_accuracy_by_variant": {
+          "true": 1.0,
+          "perturbed": 1.0
+        },
+        "latency_p50_ms": 335.15,
+        "latency_p95_ms": 385.21500000000003,
+        "max_temperature_mae_c": 0.6114666033699988,
+        "hotspot_center_error_px": 4.0573129825874705
+      }
+    }
+  },
+  "kit_samples": {
+    "acoustic_valve_01.jpg": {
+      "router": {
+        "modality": "unsupported",
+        "source": "action_type"
+      },
+      "vision": [],
+      "ocr": [
+        {
+          "text": "20",
+          "conf": 0.9986592829227448,
+          "quad": [
+            [
+              25.333333333333332,
+              6.0
+            ],
+            [
+              41.333333333333336,
+              6.0
+            ],
+            [
+              41.333333333333336,
+              18.333333333333332
+            ],
+            [
+              25.333333333333332,
+              18.333333333333332
+            ]
+          ]
+        },
+        {
+          "text": "Frequemcy(kHz)",
+          "conf": 0.8904916622809002,
+          "quad": [
+            [
+              3.6666666666666665,
+              27.666666666666668
+            ],
+            [
+              18.666666666666668,
+              27.333333333333332
+            ],
+            [
+              19.333333333333332,
+              122.66666666666667
+            ],
+            [
+              4.333333333333333,
+              122.66666666666667
+            ]
+          ]
+        },
+        {
+          "text": "15",
+          "conf": 0.9992465078830719,
+          "quad": [
+            [
+              27.333333333333332,
+              33.333333333333336
+            ],
+            [
+              41.0,
+              33.333333333333336
+            ],
+            [
+              41.0,
+              46.333333333333336
+            ],
+            [
+              27.333333333333332,
+              46.333333333333336
+            ]
+          ]
+        },
+        {
+          "text": "10",
+          "conf": 0.9990895390510559,
+          "quad": [
+            [
+              27.666666666666668,
+              61.666666666666664
+            ],
+            [
+              41.0,
+              61.666666666666664
+            ],
+            [
+              41.0,
+              74.33333333333333
+            ],
+            [
+              27.666666666666668,
+              74.33333333333333
+            ]
+          ]
+        },
+        {
+          "text": "5",
+          "conf": 0.9992684721946716,
+          "quad": [
+            [
+              33.0,
+              91.0
+            ],
+            [
+              41.0,
+              91.0
+            ],
+            [
+              41.0,
+              101.66666666666667
+            ],
+            [
+              33.0,
+              101.66666666666667
+            ]
+          ]
+        },
+        {
+          "text": "0",
+          "conf": 0.8946813941001892,
+          "quad": [
+            [
+              44.333333333333336,
+              133.0
+            ],
+            [
+              50.666666666666664,
+              133.0
+            ],
+            [
+              50.666666666666664,
+              141.33333333333334
+            ],
+            [
+              44.333333333333336,
+              141.33333333333334
+            ]
+          ]
+        },
+        {
+          "text": "2",
+          "conf": 0.9994478821754456,
+          "quad": [
+            [
+              80.0,
+              131.0
+            ],
+            [
+              88.66666666666667,
+              131.0
+            ],
+            [
+              88.66666666666667,
+              142.66666666666666
+            ],
+            [
+              80.0,
+              142.66666666666666
+            ]
+          ]
+        },
+        {
+          "text": "6",
+          "conf": 0.9882175326347351,
+          "quad": [
+            [
+              154.33333333333334,
+              132.0
+            ],
+            [
+              161.33333333333334,
+              132.0
+            ],
+            [
+              161.33333333333334,
+              142.0
+            ],
+            [
+              154.33333333333334,
+              142.0
+            ]
+          ]
+        },
+        {
+          "text": "8",
+          "conf": 0.9994557499885559,
+          "quad": [
+            [
+              191.0,
+              130.66666666666666
+            ],
+            [
+              199.66666666666666,
+              130.66666666666666
+            ],
+            [
+              199.66666666666666,
+              142.66666666666666
+            ],
+            [
+              191.0,
+              142.66666666666666
+            ]
+          ]
+        },
+        {
+          "text": "10",
+          "conf": 0.9992842376232147,
+          "quad": [
+            [
+              224.66666666666666,
+              130.66666666666666
+            ],
+            [
+              240.0,
+              130.66666666666666
+            ],
+            [
+              240.0,
+              143.33333333333334
+            ],
+            [
+              224.66666666666666,
+              143.33333333333334
+            ]
+          ]
+        },
+        {
+          "text": "Time(s)",
+          "conf": 0.9649636830602374,
+          "quad": [
+            [
+              115.66666666666667,
+              146.0
+            ],
+            [
+              163.0,
+              146.66666666666666
+            ],
+            [
+              162.66666666666666,
+              161.66666666666666
+            ],
+            [
+              115.33333333333333,
+              161.0
+            ]
+          ]
+        }
+      ],
+      "latency_ms": 450.68
+    },
+    "gauge_pressure_01.jpg": {
+      "router": {
+        "modality": "gauge",
+        "source": "action_type"
+      },
+      "vision": [
+        {
+          "id": "V1",
+          "tool": "vision.gauge",
+          "quantity": "pressure",
+          "value": -1.71,
+          "unit": "psi",
+          "confidence": 0.45,
+          "trust": "low",
+          "flags": [
+            "SCALE_LABEL_INCONSISTENT"
+          ],
+          "logged_id": null,
+          "logged_value": null,
+          "delta": null,
+          "agrees": null,
+          "pairing": "demo"
+        }
+      ],
+      "ocr": [
+        {
+          "text": "150",
+          "conf": 0.9945860505104065,
+          "quad": [
+            [
+              105.66666666666667,
+              36.333333333333336
+            ],
+            [
+              126.0,
+              36.333333333333336
+            ],
+            [
+              126.0,
+              50.666666666666664
+            ],
+            [
+              105.66666666666667,
+              50.666666666666664
+            ]
+          ]
+        },
+        {
+          "text": "100",
+          "conf": 0.9987367192904154,
+          "quad": [
+            [
+              79.0,
+              49.333333333333336
+            ],
+            [
+              98.66666666666667,
+              49.333333333333336
+            ],
+            [
+              98.66666666666667,
+              63.333333333333336
+            ],
+            [
+              79.0,
+              63.333333333333336
+            ]
+          ]
+        },
+        {
+          "text": "200",
+          "conf": 0.9955626328786215,
+          "quad": [
+            [
+              132.33333333333334,
+              49.333333333333336
+            ],
+            [
+              153.66666666666666,
+              50.0
+            ],
+            [
+              153.0,
+              63.333333333333336
+            ],
+            [
+              131.66666666666666,
+              62.666666666666664
+            ]
+          ]
+        },
+        {
+          "text": "50",
+          "conf": 0.9993510842323303,
+          "quad": [
+            [
+              68.0,
+              77.0
+            ],
+            [
+              82.33333333333333,
+              77.0
+            ],
+            [
+              82.33333333333333,
+              89.66666666666667
+            ],
+            [
+              68.0,
+              89.66666666666667
+            ]
+          ]
+        },
+        {
+          "text": "290",
+          "conf": 0.9985338250796,
+          "quad": [
+            [
+              144.66666666666666,
+              77.0
+            ],
+            [
+              166.0,
+              77.0
+            ],
+            [
+              166.0,
+              89.66666666666667
+            ],
+            [
+              144.66666666666666,
+              89.66666666666667
+            ]
+          ]
+        },
+        {
+          "text": "300",
+          "conf": 0.9984411795934042,
+          "quad": [
+            [
+              132.66666666666666,
+              106.0
+            ],
+            [
+              153.33333333333334,
+              106.0
+            ],
+            [
+              153.33333333333334,
+              119.0
+            ],
+            [
+              132.66666666666666,
+              119.0
+            ]
+          ]
+        },
+        {
+          "text": "psi",
+          "conf": 0.9858758846918741,
+          "quad": [
+            [
+              104.66666666666667,
+              115.33333333333333
+            ],
+            [
+              124.0,
+              111.0
+            ],
+            [
+              127.33333333333333,
+              125.33333333333333
+            ],
+            [
+              107.66666666666667,
+              129.66666666666666
+            ]
+          ]
+        }
+      ],
+      "latency_ms": 354.3
+    },
+    "pipe_gallery_01.jpg": {
+      "router": {
+        "modality": "unsupported",
+        "source": "action_type"
+      },
+      "vision": [],
+      "ocr": [],
+      "latency_ms": 162.63
+    },
+    "thermal_pump_bearing_01.jpg": {
+      "router": {
+        "modality": "thermal",
+        "source": "action_type"
+      },
+      "vision": [
+        {
+          "id": "V1",
+          "tool": "vision.thermal",
+          "quantity": "max_temperature",
+          "value": 100.97,
+          "unit": "°C",
+          "confidence": 0.8,
+          "trust": "high",
+          "flags": [
+            "CLIPPED"
+          ],
+          "logged_id": null,
+          "logged_value": null,
+          "delta": null,
+          "agrees": null,
+          "pairing": "demo"
+        },
+        {
+          "id": "V2",
+          "tool": "vision.thermal",
+          "quantity": "reference_temperature",
+          "value": 41.73,
+          "unit": "°C",
+          "confidence": 0.8,
+          "trust": "high",
+          "flags": [
+            "CLIPPED"
+          ],
+          "logged_id": null,
+          "logged_value": null,
+          "delta": null,
+          "agrees": null,
+          "pairing": "demo"
+        },
+        {
+          "id": "V3",
+          "tool": "vision.thermal",
+          "quantity": "delta_temperature",
+          "value": 59.24,
+          "unit": "°C",
+          "confidence": 0.8,
+          "trust": "high",
+          "flags": [
+            "CLIPPED"
+          ],
+          "logged_id": null,
+          "logged_value": null,
+          "delta": null,
+          "agrees": null,
+          "pairing": "demo"
+        }
+      ],
+      "ocr": [
+        {
+          "text": "°C",
+          "conf": 0.5861155241727829,
+          "quad": [
+            [
+              210.33333333333334,
+              10.666666666666666
+            ],
+            [
+              225.66666666666666,
+              11.666666666666666
+            ],
+            [
+              224.66666666666666,
+              23.333333333333332
+            ],
+            [
+              209.33333333333334,
+              22.333333333333332
+            ]
+          ]
+        },
+        {
+          "text": "100",
+          "conf": 0.9988539814949036,
+          "quad": [
+            [
+              210.66666666666666,
+              27.0
+            ],
+            [
+              232.66666666666666,
+              27.0
+            ],
+            [
+              232.66666666666666,
+              39.333333333333336
+            ],
+            [
+              210.66666666666666,
+              39.333333333333336
+            ]
+          ]
+        },
+        {
+          "text": "75",
+          "conf": 0.998922199010849,
+          "quad": [
+            [
+              210.66666666666666,
+              61.0
+            ],
+            [
+              226.66666666666666,
+              61.0
+            ],
+            [
+              226.66666666666666,
+              74.0
+            ],
+            [
+              210.66666666666666,
+              74.0
+            ]
+          ]
+        },
+        {
+          "text": "50",
+          "conf": 0.7232644259929657,
+          "quad": [
+            [
+              210.33333333333334,
+              93.33333333333333
+            ],
+            [
+              227.0,
+              93.33333333333333
+            ],
+            [
+              227.0,
+              106.0
+            ],
+            [
+              210.33333333333334,
+              106.0
+            ]
+          ]
+        },
+        {
+          "text": "25",
+          "conf": 0.998855322599411,
+          "quad": [
+            [
+              210.0,
+              128.0
+            ],
+            [
+              226.66666666666666,
+              128.0
+            ],
+            [
+              226.66666666666666,
+              140.66666666666666
+            ],
+            [
+              210.0,
+              140.66666666666666
+            ]
+          ]
+        }
+      ],
+      "latency_ms": 345.96
+    },
+    "valve_detail_01.jpg": {
+      "router": {
+        "modality": "unsupported",
+        "source": "action_type"
+      },
+      "vision": [],
+      "ocr": [],
+      "latency_ms": 178.23
+    },
+    "visual_pump_motor_01.jpg": {
+      "router": {
+        "modality": "unsupported",
+        "source": "action_type"
+      },
+      "vision": [],
+      "ocr": [],
+      "latency_ms": 259.96
+    }
+  },
+  "per_image": [
+    {
+      "image": "R0002-true.jpg",
+      "reading_id": "R0002",
+      "mission_id": "M014",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 136.8,
+      "rendered_value": 136.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 142.29726786654908,
+        "theta_max_deg": 412.2972678665491
+      },
+      "seed": 672902074,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 137.39,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0002",
+        "logged_value": 136.8,
+        "delta": 0.59,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 559.88,
+      "center_error_px": null
+    },
+    {
+      "image": "R0002-perturbed.jpg",
+      "reading_id": "R0002",
+      "mission_id": "M014",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 136.8,
+      "rendered_value": 80.28441888888278,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 135.4849859555575,
+        "theta_max_deg": 405.48498595555753
+      },
+      "seed": 3912704593,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 80.14,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0002",
+        "logged_value": 136.8,
+        "delta": -56.66,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 252.03,
+      "center_error_px": null
+    },
+    {
+      "image": "R0002-unreadable.jpg",
+      "reading_id": "R0002",
+      "mission_id": "M014",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 136.8,
+      "rendered_value": 136.8,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 130.42579023322705,
+        "theta_max_deg": 400.425790233227
+      },
+      "seed": 720201903,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": null,
+        "unit": "psi",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0002",
+        "logged_value": 136.8,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 116.05,
+      "center_error_px": null
+    },
+    {
+      "image": "R0005-true.jpg",
+      "reading_id": "R0005",
+      "mission_id": "M010",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 63.0,
+      "rendered_value": 63.0,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 132.30559102302067,
+        "theta_max_deg": 402.30559102302067
+      },
+      "seed": 3776819716,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        91.28491554663063,
+        98.4064977975268,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 62.25,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0005",
+        "logged_value": 63.0,
+        "delta": -0.75,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 317.85,
+      "center_error_px": 0.9292957762688455
+    },
+    {
+      "image": "R0005-perturbed.jpg",
+      "reading_id": "R0005",
+      "mission_id": "M010",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 63.0,
+      "rendered_value": 46.05595239936231,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 131.85892061921083,
+        "theta_max_deg": 401.85892061921083
+      },
+      "seed": 4087085534,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        114.83014238886406,
+        68.72267407724264,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 45.66,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0005",
+        "logged_value": 63.0,
+        "delta": -17.34,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 366.0,
+      "center_error_px": 1.4423143666152252
+    },
+    {
+      "image": "R0005-unreadable.jpg",
+      "reading_id": "R0005",
+      "mission_id": "M010",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 63.0,
+      "rendered_value": 63.0,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 139.46887253226902,
+        "theta_max_deg": 409.468872532269
+      },
+      "seed": 1366011590,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        76.44088384366057,
+        50.41199614508973,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": null,
+        "unit": "°C",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0005",
+        "logged_value": 63.0,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 163.75,
+      "center_error_px": null
+    },
+    {
+      "image": "R0009-true.jpg",
+      "reading_id": "R0009",
+      "mission_id": "M024",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 62.5,
+      "rendered_value": 62.5,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 140.33246817007492,
+        "theta_max_deg": 410.3324681700749
+      },
+      "seed": 408288451,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        46.067193992908436,
+        85.4429163805872,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 63.15,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0009",
+        "logged_value": 62.5,
+        "delta": 0.65,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 339.87,
+      "center_error_px": 0.7054524780540509
+    },
+    {
+      "image": "R0009-perturbed.jpg",
+      "reading_id": "R0009",
+      "mission_id": "M024",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 62.5,
+      "rendered_value": 40.76095314089697,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 135.95065331976792,
+        "theta_max_deg": 405.9506533197679
+      },
+      "seed": 2606693095,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        96.1807145816651,
+        93.78279941001783,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 42.03,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0009",
+        "logged_value": 62.5,
+        "delta": -20.47,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 380.12,
+      "center_error_px": 1.088855033035603
+    },
+    {
+      "image": "R0009-unreadable.jpg",
+      "reading_id": "R0009",
+      "mission_id": "M024",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 62.5,
+      "rendered_value": 62.5,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 135.29822085736726,
+        "theta_max_deg": 405.29822085736726
+      },
+      "seed": 3031020843,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        74.15106436920732,
+        112.04645138742575,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": null,
+        "unit": "°C",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0009",
+        "logged_value": 62.5,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 175.63,
+      "center_error_px": null
+    },
+    {
+      "image": "R0014-true.jpg",
+      "reading_id": "R0014",
+      "mission_id": "M009",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 67.4,
+      "rendered_value": 67.4,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 141.61864073501349,
+        "theta_max_deg": 411.61864073501346
+      },
+      "seed": 3845823118,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        117.13594447689772,
+        108.2336540094802,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 68.19,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0014",
+        "logged_value": 67.4,
+        "delta": 0.79,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 347.74,
+      "center_error_px": 0.9041748357864898
+    },
+    {
+      "image": "R0014-perturbed.jpg",
+      "reading_id": "R0014",
+      "mission_id": "M009",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 67.4,
+      "rendered_value": 55.1926776327244,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.81691508674186,
+        "theta_max_deg": 397.81691508674186
+      },
+      "seed": 2108525635,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        101.01645419093299,
+        52.00955988718435,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 56.33,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0014",
+        "logged_value": 67.4,
+        "delta": -11.07,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 372.0,
+      "center_error_px": 0.990576780201077
+    },
+    {
+      "image": "R0014-unreadable.jpg",
+      "reading_id": "R0014",
+      "mission_id": "M009",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 67.4,
+      "rendered_value": 67.4,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 140.01300239592894,
+        "theta_max_deg": 410.01300239592894
+      },
+      "seed": 340405073,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        78.98032545830532,
+        94.39483288946582,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": null,
+        "unit": "°C",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0014",
+        "logged_value": 67.4,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 172.01,
+      "center_error_px": null
+    },
+    {
+      "image": "R0016-true.jpg",
+      "reading_id": "R0016",
+      "mission_id": "M026",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 67.1,
+      "rendered_value": 67.1,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.171376795757,
+        "theta_max_deg": 397.171376795757
+      },
+      "seed": 3439392959,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        107.37098152704506,
+        118.65186193466519,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 67.89,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0016",
+        "logged_value": 67.1,
+        "delta": 0.79,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 345.44,
+      "center_error_px": 0.7189327867427019
+    },
+    {
+      "image": "R0016-perturbed.jpg",
+      "reading_id": "R0016",
+      "mission_id": "M026",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 67.1,
+      "rendered_value": 54.546346497081615,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 128.11245098915703,
+        "theta_max_deg": 398.112450989157
+      },
+      "seed": 1089706327,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        89.6899645780714,
+        111.00436348043192,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 54.62,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0016",
+        "logged_value": 67.1,
+        "delta": -12.48,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 327.33,
+      "center_error_px": 1.0427914661849162
+    },
+    {
+      "image": "R0016-unreadable.jpg",
+      "reading_id": "R0016",
+      "mission_id": "M026",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 67.1,
+      "rendered_value": 67.1,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 141.59488376972175,
+        "theta_max_deg": 411.5948837697217
+      },
+      "seed": 3650096525,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        109.36194788692285,
+        75.92555983789788,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": null,
+        "unit": "°C",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0016",
+        "logged_value": 67.1,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 161.89,
+      "center_error_px": null
+    },
+    {
+      "image": "R0019-true.jpg",
+      "reading_id": "R0019",
+      "mission_id": "M021",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 64.7,
+      "rendered_value": 64.7,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 134.66582855035884,
+        "theta_max_deg": 404.6658285503588
+      },
+      "seed": 832513913,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        99.01722494338179,
+        80.09336876898563,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 65.57,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0019",
+        "logged_value": 64.7,
+        "delta": 0.87,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 341.63,
+      "center_error_px": 0.4069958927443497
+    },
+    {
+      "image": "R0019-perturbed.jpg",
+      "reading_id": "R0019",
+      "mission_id": "M021",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 64.7,
+      "rendered_value": 52.25794266961084,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 128.0172222552654,
+        "theta_max_deg": 398.01722225526544
+      },
+      "seed": 2540772214,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        99.06293919191344,
+        108.13925186867921,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 52.95,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0019",
+        "logged_value": 64.7,
+        "delta": -11.75,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 334.46,
+      "center_error_px": 0.36619742780385434
+    },
+    {
+      "image": "R0019-unreadable.jpg",
+      "reading_id": "R0019",
+      "mission_id": "M021",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 64.7,
+      "rendered_value": 64.7,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 142.3279733852306,
+        "theta_max_deg": 412.32797338523056
+      },
+      "seed": 2116188459,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        98.5723458817944,
+        102.17034281742923,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": null,
+        "unit": "°C",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0019",
+        "logged_value": 64.7,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 145.44,
+      "center_error_px": null
+    },
+    {
+      "image": "R0023-true.jpg",
+      "reading_id": "R0023",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 75.1,
+      "rendered_value": 75.1,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 129.11997866449553,
+        "theta_max_deg": 399.11997866449553
+      },
+      "seed": 484603258,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        100.05601107997687,
+        102.85176279426355,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 74.52,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0023",
+        "logged_value": 75.1,
+        "delta": -0.58,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 337.95,
+      "center_error_px": 0.46808164914665956
+    },
+    {
+      "image": "R0023-perturbed.jpg",
+      "reading_id": "R0023",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 75.1,
+      "rendered_value": 59.43126937052626,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 130.7706501371509,
+        "theta_max_deg": 400.77065013715094
+      },
+      "seed": 1601334862,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        74.02450853014867,
+        82.33625842783061,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 59.5,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0023",
+        "logged_value": 75.1,
+        "delta": -15.6,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 331.36,
+      "center_error_px": 0.16556560786150648
+    },
+    {
+      "image": "R0023-unreadable.jpg",
+      "reading_id": "R0023",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 75.1,
+      "rendered_value": 75.1,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.93814599297689,
+        "theta_max_deg": 397.9381459929769
+      },
+      "seed": 3352807310,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        105.21081828842539,
+        90.78970801497388,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": null,
+        "unit": "°C",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0023",
+        "logged_value": 75.1,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 157.45,
+      "center_error_px": null
+    },
+    {
+      "image": "R0024-true.jpg",
+      "reading_id": "R0024",
+      "mission_id": "M022",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 99.3,
+      "rendered_value": 99.3,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 137.1443836553441,
+        "theta_max_deg": 407.1443836553441
+      },
+      "seed": 2733141036,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 99.12,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0024",
+        "logged_value": 99.3,
+        "delta": -0.18,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 219.6,
+      "center_error_px": null
+    },
+    {
+      "image": "R0024-perturbed.jpg",
+      "reading_id": "R0024",
+      "mission_id": "M022",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 99.3,
+      "rendered_value": 176.94249622051194,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 142.2455987905638,
+        "theta_max_deg": 412.2455987905638
+      },
+      "seed": 890648186,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 177.71,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0024",
+        "logged_value": 99.3,
+        "delta": 78.41,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 220.67,
+      "center_error_px": null
+    },
+    {
+      "image": "R0024-unreadable.jpg",
+      "reading_id": "R0024",
+      "mission_id": "M022",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 99.3,
+      "rendered_value": 99.3,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 140.2073005045458,
+        "theta_max_deg": 410.2073005045458
+      },
+      "seed": 2565319191,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": null,
+        "unit": "psi",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0024",
+        "logged_value": 99.3,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 108.16,
+      "center_error_px": null
+    },
+    {
+      "image": "R0027-true.jpg",
+      "reading_id": "R0027",
+      "mission_id": "M002",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 122.2,
+      "rendered_value": 122.2,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 133.02114939112232,
+        "theta_max_deg": 403.0211493911223
+      },
+      "seed": 3637137493,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 124.28,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0027",
+        "logged_value": 122.2,
+        "delta": 2.08,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 214.46,
+      "center_error_px": null
+    },
+    {
+      "image": "R0027-perturbed.jpg",
+      "reading_id": "R0027",
+      "mission_id": "M002",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 122.2,
+      "rendered_value": 48.54344848183432,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 140.97009648581303,
+        "theta_max_deg": 410.97009648581303
+      },
+      "seed": 790523359,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 47.53,
+        "unit": "psi",
+        "confidence": 0.45,
+        "trust": "low",
+        "flags": [
+          "SCALE_LABEL_INCONSISTENT"
+        ],
+        "logged_id": "R0027",
+        "logged_value": 122.2,
+        "delta": -74.67,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 218.12,
+      "center_error_px": null
+    },
+    {
+      "image": "R0027-unreadable.jpg",
+      "reading_id": "R0027",
+      "mission_id": "M002",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 122.2,
+      "rendered_value": 122.2,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 138.8254665978378,
+        "theta_max_deg": 408.8254665978378
+      },
+      "seed": 1652989160,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": null,
+        "unit": "psi",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0027",
+        "logged_value": 122.2,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 107.13,
+      "center_error_px": null
+    },
+    {
+      "image": "R0035-true.jpg",
+      "reading_id": "R0035",
+      "mission_id": "M017",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 124.2,
+      "rendered_value": 124.2,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 134.62444734394583,
+        "theta_max_deg": 404.62444734394586
+      },
+      "seed": 2072834892,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 123.76,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0035",
+        "logged_value": 124.2,
+        "delta": -0.44,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 199.4,
+      "center_error_px": null
+    },
+    {
+      "image": "R0035-perturbed.jpg",
+      "reading_id": "R0035",
+      "mission_id": "M017",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 124.2,
+      "rendered_value": 59.95748069911157,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 137.9576061762843,
+        "theta_max_deg": 407.9576061762843
+      },
+      "seed": 1985186460,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 60.34,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0035",
+        "logged_value": 124.2,
+        "delta": -63.86,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 232.73,
+      "center_error_px": null
+    },
+    {
+      "image": "R0035-unreadable.jpg",
+      "reading_id": "R0035",
+      "mission_id": "M017",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 124.2,
+      "rendered_value": 124.2,
+      "variant": "unreadable",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 131.30891331621456,
+        "theta_max_deg": 401.30891331621456
+      },
+      "seed": 2428958392,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": null,
+        "unit": "psi",
+        "confidence": 0.0,
+        "trust": "low",
+        "flags": [
+          "UNREADABLE"
+        ],
+        "logged_id": "R0035",
+        "logged_value": 124.2,
+        "delta": null,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 116.69,
+      "center_error_px": null
+    },
+    {
+      "image": "R0039-true.jpg",
+      "reading_id": "R0039",
+      "mission_id": "M005",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 64.6,
+      "rendered_value": 64.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 132.63662171765935,
+        "theta_max_deg": 402.63662171765935
+      },
+      "seed": 1055196394,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        103.2621865675268,
+        52.80987254908095,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 64.98,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0039",
+        "logged_value": 64.6,
+        "delta": 0.38,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 331.37,
+      "center_error_px": 0.761916733462959
+    },
+    {
+      "image": "R0039-perturbed.jpg",
+      "reading_id": "R0039",
+      "mission_id": "M005",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 64.6,
+      "rendered_value": 39.61264566007991,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 138.72254237006513,
+        "theta_max_deg": 408.7225423700651
+      },
+      "seed": 1818908794,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        89.54764887970887,
+        106.6247390281469,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 42.72,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0039",
+        "logged_value": 64.6,
+        "delta": -21.88,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 334.13,
+      "center_error_px": 24.157960455321426
+    },
+    {
+      "image": "R0040-true.jpg",
+      "reading_id": "R0040",
+      "mission_id": "M018",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 86.4,
+      "rendered_value": 86.4,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 134.37023795479436,
+        "theta_max_deg": 404.37023795479433
+      },
+      "seed": 2882821461,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 85.84,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0040",
+        "logged_value": 86.4,
+        "delta": -0.56,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 217.53,
+      "center_error_px": null
+    },
+    {
+      "image": "R0040-perturbed.jpg",
+      "reading_id": "R0040",
+      "mission_id": "M018",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 86.4,
+      "rendered_value": 158.18082685958746,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 140.36986459506798,
+        "theta_max_deg": 410.369864595068
+      },
+      "seed": 2999874227,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 158.57,
+        "unit": "psi",
+        "confidence": 0.45,
+        "trust": "low",
+        "flags": [
+          "SCALE_LABEL_INCONSISTENT"
+        ],
+        "logged_id": "R0040",
+        "logged_value": 86.4,
+        "delta": 72.17,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 216.0,
+      "center_error_px": null
+    },
+    {
+      "image": "R0049-true.jpg",
+      "reading_id": "R0049",
+      "mission_id": "M022",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 48.3,
+      "rendered_value": 48.3,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 137.86870752371394,
+        "theta_max_deg": 407.86870752371397
+      },
+      "seed": 1859807307,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        80.05160429048388,
+        64.12390499228967,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 46.79,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0049",
+        "logged_value": 48.3,
+        "delta": -1.51,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 329.96,
+      "center_error_px": 1.6712545862536583
+    },
+    {
+      "image": "R0049-perturbed.jpg",
+      "reading_id": "R0049",
+      "mission_id": "M022",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 48.3,
+      "rendered_value": 77.6220641475774,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 142.42149473926605,
+        "theta_max_deg": 412.42149473926605
+      },
+      "seed": 1375481461,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        113.09045478763011,
+        97.23251666690005,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 77.89,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0049",
+        "logged_value": 48.3,
+        "delta": 29.59,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 320.55,
+      "center_error_px": 1.1900853582542703
+    },
+    {
+      "image": "R0051-true.jpg",
+      "reading_id": "R0051",
+      "mission_id": "M011",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 140.8,
+      "rendered_value": 140.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 132.20945257951968,
+        "theta_max_deg": 402.2094525795197
+      },
+      "seed": 3255855648,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 140.76,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0051",
+        "logged_value": 140.8,
+        "delta": -0.04,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 250.06,
+      "center_error_px": null
+    },
+    {
+      "image": "R0051-perturbed.jpg",
+      "reading_id": "R0051",
+      "mission_id": "M011",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 140.8,
+      "rendered_value": 61.97884917741304,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 142.62276826322784,
+        "theta_max_deg": 412.62276826322784
+      },
+      "seed": 1186920708,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 62.33,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0051",
+        "logged_value": 140.8,
+        "delta": -78.47,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 220.06,
+      "center_error_px": null
+    },
+    {
+      "image": "R0052-true.jpg",
+      "reading_id": "R0052",
+      "mission_id": "M026",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 101.4,
+      "rendered_value": 101.4,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 128.17059133112193,
+        "theta_max_deg": 398.1705913311219
+      },
+      "seed": 1052084003,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 102.05,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0052",
+        "logged_value": 101.4,
+        "delta": 0.65,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 231.0,
+      "center_error_px": null
+    },
+    {
+      "image": "R0052-perturbed.jpg",
+      "reading_id": "R0052",
+      "mission_id": "M026",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 101.4,
+      "rendered_value": 58.59083302961222,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 131.09893343052408,
+        "theta_max_deg": 401.0989334305241
+      },
+      "seed": 3384806406,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 58.83,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0052",
+        "logged_value": 101.4,
+        "delta": -42.57,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 215.03,
+      "center_error_px": null
+    },
+    {
+      "image": "R0053-true.jpg",
+      "reading_id": "R0053",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 114.2,
+      "rendered_value": 114.2,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 130.85059458370674,
+        "theta_max_deg": 400.85059458370677
+      },
+      "seed": 2753265179,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 116.02,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0053",
+        "logged_value": 114.2,
+        "delta": 1.82,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 231.46,
+      "center_error_px": null
+    },
+    {
+      "image": "R0053-perturbed.jpg",
+      "reading_id": "R0053",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 114.2,
+      "rendered_value": 49.19237557727321,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 138.20243981527258,
+        "theta_max_deg": 408.20243981527256
+      },
+      "seed": 831761755,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 48.92,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0053",
+        "logged_value": 114.2,
+        "delta": -65.28,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 195.02,
+      "center_error_px": null
+    },
+    {
+      "image": "R0055-true.jpg",
+      "reading_id": "R0055",
+      "mission_id": "M009",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 99.7,
+      "rendered_value": 99.7,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 129.3087009515653,
+        "theta_max_deg": 399.3087009515653
+      },
+      "seed": 784635687,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 99.87,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0055",
+        "logged_value": 99.7,
+        "delta": 0.17,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 230.9,
+      "center_error_px": null
+    },
+    {
+      "image": "R0055-perturbed.jpg",
+      "reading_id": "R0055",
+      "mission_id": "M009",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 99.7,
+      "rendered_value": 166.65650507630806,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 138.82608162441858,
+        "theta_max_deg": 408.8260816244186
+      },
+      "seed": 2618106243,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 166.76,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0055",
+        "logged_value": 99.7,
+        "delta": 67.06,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 218.77,
+      "center_error_px": null
+    },
+    {
+      "image": "R0060-true.jpg",
+      "reading_id": "R0060",
+      "mission_id": "M026",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 93.5,
+      "rendered_value": 93.5,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 132.1134601934698,
+        "theta_max_deg": 402.1134601934698
+      },
+      "seed": 2327581962,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 93.63,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0060",
+        "logged_value": 93.5,
+        "delta": 0.13,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 219.17,
+      "center_error_px": null
+    },
+    {
+      "image": "R0060-perturbed.jpg",
+      "reading_id": "R0060",
+      "mission_id": "M026",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 93.5,
+      "rendered_value": 135.62425197271565,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 130.879760631269,
+        "theta_max_deg": 400.879760631269
+      },
+      "seed": 2088616474,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 134.55,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0060",
+        "logged_value": 93.5,
+        "delta": 41.05,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 215.42,
+      "center_error_px": null
+    },
+    {
+      "image": "R0073-true.jpg",
+      "reading_id": "R0073",
+      "mission_id": "M002",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 104.7,
+      "rendered_value": 104.7,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 136.40628618704324,
+        "theta_max_deg": 406.40628618704324
+      },
+      "seed": 180061725,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 104.18,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0073",
+        "logged_value": 104.7,
+        "delta": -0.52,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 225.05,
+      "center_error_px": null
+    },
+    {
+      "image": "R0073-perturbed.jpg",
+      "reading_id": "R0073",
+      "mission_id": "M002",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 104.7,
+      "rendered_value": 31.9269517451595,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 140.68737544154897,
+        "theta_max_deg": 410.68737544154897
+      },
+      "seed": 2600166266,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 30.96,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0073",
+        "logged_value": 104.7,
+        "delta": -73.74,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 232.59,
+      "center_error_px": null
+    },
+    {
+      "image": "R0078-true.jpg",
+      "reading_id": "R0078",
+      "mission_id": "M004",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 68.6,
+      "rendered_value": 68.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 129.03795191186566,
+        "theta_max_deg": 399.03795191186566
+      },
+      "seed": 2575562656,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 67.35,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0078",
+        "logged_value": 68.6,
+        "delta": -1.25,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 283.01,
+      "center_error_px": null
+    },
+    {
+      "image": "R0078-perturbed.jpg",
+      "reading_id": "R0078",
+      "mission_id": "M004",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 68.6,
+      "rendered_value": 100.92763874091753,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 127.74484439709362,
+        "theta_max_deg": 397.74484439709363
+      },
+      "seed": 3505386256,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 100.99,
+        "unit": "psi",
+        "confidence": 0.45,
+        "trust": "low",
+        "flags": [
+          "SCALE_LABEL_INCONSISTENT"
+        ],
+        "logged_id": "R0078",
+        "logged_value": 68.6,
+        "delta": 32.39,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 225.65,
+      "center_error_px": null
+    },
+    {
+      "image": "R0081-true.jpg",
+      "reading_id": "R0081",
+      "mission_id": "M013",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 140.1,
+      "rendered_value": 140.1,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 133.1767425880873,
+        "theta_max_deg": 403.1767425880873
+      },
+      "seed": 235888153,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 140.15,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0081",
+        "logged_value": 140.1,
+        "delta": 0.05,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 206.2,
+      "center_error_px": null
+    },
+    {
+      "image": "R0081-perturbed.jpg",
+      "reading_id": "R0081",
+      "mission_id": "M013",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 140.1,
+      "rendered_value": 65.4397790751578,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 141.2912706959495,
+        "theta_max_deg": 411.2912706959495
+      },
+      "seed": 766693568,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 64.75,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0081",
+        "logged_value": 140.1,
+        "delta": -75.35,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 219.1,
+      "center_error_px": null
+    },
+    {
+      "image": "R0083-true.jpg",
+      "reading_id": "R0083",
+      "mission_id": "M024",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 57.4,
+      "rendered_value": 57.4,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 129.52660774232174,
+        "theta_max_deg": 399.52660774232174
+      },
+      "seed": 740557882,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        72.37790957674976,
+        89.01424933306687,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 58.23,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0083",
+        "logged_value": 57.4,
+        "delta": 0.83,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 322.7,
+      "center_error_px": 0.7892719462426397
+    },
+    {
+      "image": "R0083-perturbed.jpg",
+      "reading_id": "R0083",
+      "mission_id": "M024",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 57.4,
+      "rendered_value": 75.84085454921153,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 133.13619588199384,
+        "theta_max_deg": 403.13619588199384
+      },
+      "seed": 2861807830,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        109.14886391764045,
+        78.84826351790952,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 75.93,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0083",
+        "logged_value": 57.4,
+        "delta": 18.53,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 335.84,
+      "center_error_px": 0.7403087129181243
+    },
+    {
+      "image": "R0085-true.jpg",
+      "reading_id": "R0085",
+      "mission_id": "M008",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 74.6,
+      "rendered_value": 74.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 130.1105738465815,
+        "theta_max_deg": 400.1105738465815
+      },
+      "seed": 3074711358,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 74.22,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0085",
+        "logged_value": 74.6,
+        "delta": -0.38,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 221.98,
+      "center_error_px": null
+    },
+    {
+      "image": "R0085-perturbed.jpg",
+      "reading_id": "R0085",
+      "mission_id": "M008",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 74.6,
+      "rendered_value": 147.7464876490618,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 140.80687604769977,
+        "theta_max_deg": 410.8068760476998
+      },
+      "seed": 4016354414,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 149.09,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0085",
+        "logged_value": 74.6,
+        "delta": 74.49,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 209.64,
+      "center_error_px": null
+    },
+    {
+      "image": "R0093-true.jpg",
+      "reading_id": "R0093",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.3,
+      "rendered_value": 65.3,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 141.6238433415203,
+        "theta_max_deg": 411.62384334152034
+      },
+      "seed": 2071049294,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        62.691240074952304,
+        107.5062088113763,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 65.71,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0093",
+        "logged_value": 65.3,
+        "delta": 0.41,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 320.49,
+      "center_error_px": 0.5823765356518652
+    },
+    {
+      "image": "R0093-perturbed.jpg",
+      "reading_id": "R0093",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.3,
+      "rendered_value": 38.69304262360072,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 140.1046036278607,
+        "theta_max_deg": 410.10460362786074
+      },
+      "seed": 1013487537,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        77.82456542448664,
+        92.49815123877171,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 40.66,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0093",
+        "logged_value": 65.3,
+        "delta": -24.64,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 323.21,
+      "center_error_px": 11.609319692666745
+    },
+    {
+      "image": "R0095-true.jpg",
+      "reading_id": "R0095",
+      "mission_id": "M027",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 57.8,
+      "rendered_value": 57.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 130.77754473928422,
+        "theta_max_deg": 400.7775447392842
+      },
+      "seed": 2652694366,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        43.29593817794559,
+        91.09860943807523,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 59.59,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0095",
+        "logged_value": 57.8,
+        "delta": 1.79,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 314.9,
+      "center_error_px": 1.1437692050416617
+    },
+    {
+      "image": "R0095-perturbed.jpg",
+      "reading_id": "R0095",
+      "mission_id": "M027",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 57.8,
+      "rendered_value": 79.4306392147081,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 135.8581454632176,
+        "theta_max_deg": 405.85814546321757
+      },
+      "seed": 1289542158,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        76.09064654379097,
+        89.10416536613911,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 79.76,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0095",
+        "logged_value": 57.8,
+        "delta": 21.96,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 341.86,
+      "center_error_px": 0.5694342011804896
+    },
+    {
+      "image": "R0096-true.jpg",
+      "reading_id": "R0096",
+      "mission_id": "M005",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 60.0,
+      "rendered_value": 60.0,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 137.59968313830376,
+        "theta_max_deg": 407.59968313830376
+      },
+      "seed": 1959572964,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        108.61148825117564,
+        51.806223865009684,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 59.85,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0096",
+        "logged_value": 60.0,
+        "delta": -0.15,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 347.57,
+      "center_error_px": 0.4341550062665924
+    },
+    {
+      "image": "R0096-perturbed.jpg",
+      "reading_id": "R0096",
+      "mission_id": "M005",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 60.0,
+      "rendered_value": 83.76412690726487,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 137.6787216275327,
+        "theta_max_deg": 407.6787216275327
+      },
+      "seed": 3378390922,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        62.320821761488986,
+        68.95110013631344,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 84.23,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0096",
+        "logged_value": 60.0,
+        "delta": 24.23,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 341.37,
+      "center_error_px": 0.8732549112498852
+    },
+    {
+      "image": "R0097-true.jpg",
+      "reading_id": "R0097",
+      "mission_id": "M025",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 73.9,
+      "rendered_value": 73.9,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 141.9013323832066,
+        "theta_max_deg": 411.9013323832066
+      },
+      "seed": 3015727624,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        106.76889952401227,
+        62.99901463883816,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 72.73,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0097",
+        "logged_value": 73.9,
+        "delta": -1.17,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 326.75,
+      "center_error_px": 0.23110257665888306
+    },
+    {
+      "image": "R0097-perturbed.jpg",
+      "reading_id": "R0097",
+      "mission_id": "M025",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 73.9,
+      "rendered_value": 54.531346402067115,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 133.9279177369027,
+        "theta_max_deg": 403.9279177369027
+      },
+      "seed": 2743380444,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        112.08847484535212,
+        78.5434731941437,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 54.33,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0097",
+        "logged_value": 73.9,
+        "delta": -19.57,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 332.15,
+      "center_error_px": 1.3212954392858127
+    },
+    {
+      "image": "R0098-true.jpg",
+      "reading_id": "R0098",
+      "mission_id": "M013",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 102.8,
+      "rendered_value": 102.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 136.4883447000984,
+        "theta_max_deg": 406.48834470009837
+      },
+      "seed": 3947479753,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 102.08,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0098",
+        "logged_value": 102.8,
+        "delta": -0.72,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 205.52,
+      "center_error_px": null
+    },
+    {
+      "image": "R0098-perturbed.jpg",
+      "reading_id": "R0098",
+      "mission_id": "M013",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 102.8,
+      "rendered_value": 69.34051421511086,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 128.10703545116453,
+        "theta_max_deg": 398.1070354511645
+      },
+      "seed": 2394602726,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 69.9,
+        "unit": "psi",
+        "confidence": 0.45,
+        "trust": "low",
+        "flags": [
+          "SCALE_LABEL_INCONSISTENT"
+        ],
+        "logged_id": "R0098",
+        "logged_value": 102.8,
+        "delta": -32.9,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 208.59,
+      "center_error_px": null
+    },
+    {
+      "image": "R0100-true.jpg",
+      "reading_id": "R0100",
+      "mission_id": "M006",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 111.6,
+      "rendered_value": 111.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 135.1559487431119,
+        "theta_max_deg": 405.1559487431119
+      },
+      "seed": 3722124924,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 111.83,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0100",
+        "logged_value": 111.6,
+        "delta": 0.23,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 205.42,
+      "center_error_px": null
+    },
+    {
+      "image": "R0100-perturbed.jpg",
+      "reading_id": "R0100",
+      "mission_id": "M006",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 111.6,
+      "rendered_value": 53.491047216402215,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 135.9948648907513,
+        "theta_max_deg": 405.9948648907513
+      },
+      "seed": 938196256,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 53.19,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0100",
+        "logged_value": 111.6,
+        "delta": -58.41,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 208.9,
+      "center_error_px": null
+    },
+    {
+      "image": "R0102-true.jpg",
+      "reading_id": "R0102",
+      "mission_id": "M020",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 70.8,
+      "rendered_value": 70.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 133.91185924771253,
+        "theta_max_deg": 403.9118592477125
+      },
+      "seed": 439572167,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        58.59321380748288,
+        51.53082797795983,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 71.03,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0102",
+        "logged_value": 70.8,
+        "delta": 0.23,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 322.49,
+      "center_error_px": 0.6209648884500911
+    },
+    {
+      "image": "R0102-perturbed.jpg",
+      "reading_id": "R0102",
+      "mission_id": "M020",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 70.8,
+      "rendered_value": 42.6740415444883,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 141.40081788203665,
+        "theta_max_deg": 411.4008178820367
+      },
+      "seed": 797627970,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        99.69022480553876,
+        97.22801447639756,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 44.38,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0102",
+        "logged_value": 70.8,
+        "delta": -26.42,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 322.27,
+      "center_error_px": 1.1187928826268372
+    },
+    {
+      "image": "R0104-true.jpg",
+      "reading_id": "R0104",
+      "mission_id": "M004",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 74.9,
+      "rendered_value": 74.9,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 141.9620136842018,
+        "theta_max_deg": 411.9620136842018
+      },
+      "seed": 252752426,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        69.8534299500127,
+        82.59049307603289,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 74.62,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0104",
+        "logged_value": 74.9,
+        "delta": -0.28,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 328.43,
+      "center_error_px": 1.2175051541184114
+    },
+    {
+      "image": "R0104-perturbed.jpg",
+      "reading_id": "R0104",
+      "mission_id": "M004",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 74.9,
+      "rendered_value": 50.37463328537558,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 138.32831292981285,
+        "theta_max_deg": 408.32831292981285
+      },
+      "seed": 4231002963,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        56.57939668492641,
+        76.52298521944543,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 50.06,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0104",
+        "logged_value": 74.9,
+        "delta": -24.84,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 327.65,
+      "center_error_px": 0.42123089744681586
+    },
+    {
+      "image": "R0107-true.jpg",
+      "reading_id": "R0107",
+      "mission_id": "M022",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 77.3,
+      "rendered_value": 77.3,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.72295616559553,
+        "theta_max_deg": 397.7229561655955
+      },
+      "seed": 2536835780,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        111.7022362808923,
+        110.86003647657031,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 77.36,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0107",
+        "logged_value": 77.3,
+        "delta": 0.06,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 330.19,
+      "center_error_px": 1.0227317648558183
+    },
+    {
+      "image": "R0107-perturbed.jpg",
+      "reading_id": "R0107",
+      "mission_id": "M022",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 77.3,
+      "rendered_value": 57.05773197269677,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 134.67340204996543,
+        "theta_max_deg": 404.67340204996543
+      },
+      "seed": 932139684,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        73.04006371233173,
+        75.94311193615847,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 58.02,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0107",
+        "logged_value": 77.3,
+        "delta": -19.28,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 337.46,
+      "center_error_px": 1.1097756494136573
+    },
+    {
+      "image": "R0108-true.jpg",
+      "reading_id": "R0108",
+      "mission_id": "M005",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 89.6,
+      "rendered_value": 89.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 127.33914301058866,
+        "theta_max_deg": 397.33914301058866
+      },
+      "seed": 1361407029,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 91.05,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0108",
+        "logged_value": 89.6,
+        "delta": 1.45,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 226.71,
+      "center_error_px": null
+    },
+    {
+      "image": "R0108-perturbed.jpg",
+      "reading_id": "R0108",
+      "mission_id": "M005",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 89.6,
+      "rendered_value": 157.216619845967,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 139.03731835070946,
+        "theta_max_deg": 409.0373183507094
+      },
+      "seed": 647086034,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 158.35,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0108",
+        "logged_value": 89.6,
+        "delta": 68.75,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 310.34,
+      "center_error_px": null
+    },
+    {
+      "image": "R0112-true.jpg",
+      "reading_id": "R0112",
+      "mission_id": "M025",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 117.7,
+      "rendered_value": 117.7,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 137.5794100374427,
+        "theta_max_deg": 407.5794100374427
+      },
+      "seed": 1974058352,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 118.28,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0112",
+        "logged_value": 117.7,
+        "delta": 0.58,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 229.47,
+      "center_error_px": null
+    },
+    {
+      "image": "R0112-perturbed.jpg",
+      "reading_id": "R0112",
+      "mission_id": "M025",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 117.7,
+      "rendered_value": 62.36912788989503,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 135.1058790752336,
+        "theta_max_deg": 405.1058790752336
+      },
+      "seed": 2782890624,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 62.27,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0112",
+        "logged_value": 117.7,
+        "delta": -55.43,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 219.76,
+      "center_error_px": null
+    },
+    {
+      "image": "R0117-true.jpg",
+      "reading_id": "R0117",
+      "mission_id": "M007",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.6,
+      "rendered_value": 65.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 137.95921749178027,
+        "theta_max_deg": 407.95921749178024
+      },
+      "seed": 2002422287,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        99.42550163454231,
+        110.18828600801544,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 65.94,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0117",
+        "logged_value": 65.6,
+        "delta": 0.34,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 339.0,
+      "center_error_px": 0.6536160835785053
+    },
+    {
+      "image": "R0117-perturbed.jpg",
+      "reading_id": "R0117",
+      "mission_id": "M007",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.6,
+      "rendered_value": 53.81660464878312,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.4551640330384,
+        "theta_max_deg": 397.4551640330384
+      },
+      "seed": 3463066927,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        45.84104120270861,
+        58.912414377916576,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 54.41,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0117",
+        "logged_value": 65.6,
+        "delta": -11.19,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 351.17,
+      "center_error_px": 0.18149143349498803
+    },
+    {
+      "image": "R0118-true.jpg",
+      "reading_id": "R0118",
+      "mission_id": "M025",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 99.0,
+      "rendered_value": 99.0,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 128.44893737456252,
+        "theta_max_deg": 398.4489373745625
+      },
+      "seed": 2124861917,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 98.69,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0118",
+        "logged_value": 99.0,
+        "delta": -0.31,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 224.35,
+      "center_error_px": null
+    },
+    {
+      "image": "R0118-perturbed.jpg",
+      "reading_id": "R0118",
+      "mission_id": "M025",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 99.0,
+      "rendered_value": 156.43228510880454,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 135.77833123481744,
+        "theta_max_deg": 405.7783312348175
+      },
+      "seed": 2402478832,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 156.74,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0118",
+        "logged_value": 99.0,
+        "delta": 57.74,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 225.01,
+      "center_error_px": null
+    },
+    {
+      "image": "R0120-true.jpg",
+      "reading_id": "R0120",
+      "mission_id": "M023",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 83.5,
+      "rendered_value": 83.5,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 131.87522301600373,
+        "theta_max_deg": 401.8752230160037
+      },
+      "seed": 3068220234,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        78.0247561643929,
+        100.75519497995596,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 83.62,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0120",
+        "logged_value": 83.5,
+        "delta": 0.12,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 341.95,
+      "center_error_px": 0.5345897502957887
+    },
+    {
+      "image": "R0120-perturbed.jpg",
+      "reading_id": "R0120",
+      "mission_id": "M023",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 83.5,
+      "rendered_value": 56.305074082869524,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 140.606336782618,
+        "theta_max_deg": 410.60633678261803
+      },
+      "seed": 1807035697,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        88.72105293758125,
+        110.5729859334348,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 57.02,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0120",
+        "logged_value": 83.5,
+        "delta": -26.48,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 327.75,
+      "center_error_px": 0.8883127484705805
+    },
+    {
+      "image": "R0125-true.jpg",
+      "reading_id": "R0125",
+      "mission_id": "M016",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 75.5,
+      "rendered_value": 75.5,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 128.15847155590632,
+        "theta_max_deg": 398.1584715559063
+      },
+      "seed": 3399471963,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        71.2444607755367,
+        88.63979587769848,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 75.64,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0125",
+        "logged_value": 75.5,
+        "delta": 0.14,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 316.5,
+      "center_error_px": 0.8370104715149177
+    },
+    {
+      "image": "R0125-perturbed.jpg",
+      "reading_id": "R0125",
+      "mission_id": "M016",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 75.5,
+      "rendered_value": 63.060567454303,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 128.01498243899476,
+        "theta_max_deg": 398.01498243899476
+      },
+      "seed": 2225638339,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        90.7599152243931,
+        60.778755306908835,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 65.19,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0125",
+        "logged_value": 75.5,
+        "delta": -10.31,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 324.54,
+      "center_error_px": 0.7724472081030026
+    },
+    {
+      "image": "R0127-true.jpg",
+      "reading_id": "R0127",
+      "mission_id": "M020",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 72.5,
+      "rendered_value": 72.5,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 141.1670042111641,
+        "theta_max_deg": 411.1670042111641
+      },
+      "seed": 3587860951,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        72.19845548819389,
+        76.12056425573498,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 72.68,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0127",
+        "logged_value": 72.5,
+        "delta": 0.18,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 335.15,
+      "center_error_px": 0.8868173929465151
+    },
+    {
+      "image": "R0127-perturbed.jpg",
+      "reading_id": "R0127",
+      "mission_id": "M020",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 72.5,
+      "rendered_value": 45.25898332406828,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 140.64566756346173,
+        "theta_max_deg": 410.64566756346176
+      },
+      "seed": 106316117,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        50.47797759182477,
+        69.13212134167058,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 45.47,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0127",
+        "logged_value": 72.5,
+        "delta": -27.03,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 335.94,
+      "center_error_px": 0.9907956115517838
+    },
+    {
+      "image": "R0128-true.jpg",
+      "reading_id": "R0128",
+      "mission_id": "M013",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 76.1,
+      "rendered_value": 76.1,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.0819683862351,
+        "theta_max_deg": 397.0819683862351
+      },
+      "seed": 3854637703,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        75.12861535806242,
+        96.03998864334893,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 76.06,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0128",
+        "logged_value": 76.1,
+        "delta": -0.04,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 324.54,
+      "center_error_px": 0.5912165428293253
+    },
+    {
+      "image": "R0128-perturbed.jpg",
+      "reading_id": "R0128",
+      "mission_id": "M013",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 76.1,
+      "rendered_value": 53.355919533353315,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 136.80828199820516,
+        "theta_max_deg": 406.8082819982052
+      },
+      "seed": 3760596761,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        73.85697126457647,
+        110.302106613652,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 53.48,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0128",
+        "logged_value": 76.1,
+        "delta": -22.62,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 318.32,
+      "center_error_px": 0.9489684574782552
+    },
+    {
+      "image": "R0131-true.jpg",
+      "reading_id": "R0131",
+      "mission_id": "M018",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.0,
+      "rendered_value": 65.0,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 135.86369911292144,
+        "theta_max_deg": 405.86369911292144
+      },
+      "seed": 2025561010,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        87.05984082339214,
+        86.93925024449052,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 64.79,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0131",
+        "logged_value": 65.0,
+        "delta": -0.21,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 317.99,
+      "center_error_px": 1.0946869715420544
+    },
+    {
+      "image": "R0131-perturbed.jpg",
+      "reading_id": "R0131",
+      "mission_id": "M018",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.0,
+      "rendered_value": 53.469550132341446,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.23931722040197,
+        "theta_max_deg": 397.239317220402
+      },
+      "seed": 1438443419,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        76.42363084754173,
+        72.01130723103994,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 53.84,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0131",
+        "logged_value": 65.0,
+        "delta": -11.16,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 324.08,
+      "center_error_px": 1.1444277134443148
+    },
+    {
+      "image": "R0132-true.jpg",
+      "reading_id": "R0132",
+      "mission_id": "M021",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 110.1,
+      "rendered_value": 110.1,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 132.0818332364616,
+        "theta_max_deg": 402.0818332364616
+      },
+      "seed": 4198464189,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 109.67,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0132",
+        "logged_value": 110.1,
+        "delta": -0.43,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 211.24,
+      "center_error_px": null
+    },
+    {
+      "image": "R0132-perturbed.jpg",
+      "reading_id": "R0132",
+      "mission_id": "M021",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 110.1,
+      "rendered_value": 46.109231710815585,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 137.877045852539,
+        "theta_max_deg": 407.877045852539
+      },
+      "seed": 2569164524,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 46.01,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0132",
+        "logged_value": 110.1,
+        "delta": -64.09,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 212.32,
+      "center_error_px": null
+    },
+    {
+      "image": "R0134-true.jpg",
+      "reading_id": "R0134",
+      "mission_id": "M001",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 72.9,
+      "rendered_value": 72.9,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 139.4070418159677,
+        "theta_max_deg": 409.4070418159677
+      },
+      "seed": 4162504807,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        66.12900227200466,
+        98.34175464743117,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 72.66,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0134",
+        "logged_value": 72.9,
+        "delta": -0.24,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 323.89,
+      "center_error_px": 0.8852562531734441
+    },
+    {
+      "image": "R0134-perturbed.jpg",
+      "reading_id": "R0134",
+      "mission_id": "M001",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 72.9,
+      "rendered_value": 43.034448426797056,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 142.88527067579986,
+        "theta_max_deg": 412.88527067579986
+      },
+      "seed": 4108456864,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        54.243986419760645,
+        94.04951053092805,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 43.96,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0134",
+        "logged_value": 72.9,
+        "delta": -28.94,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 320.03,
+      "center_error_px": 0.8800552796563735
+    },
+    {
+      "image": "R0135-true.jpg",
+      "reading_id": "R0135",
+      "mission_id": "M023",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 53.6,
+      "rendered_value": 53.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 133.50416173857542,
+        "theta_max_deg": 403.5041617385754
+      },
+      "seed": 2202261909,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        67.34480880249944,
+        69.58676069811244,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 53.86,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0135",
+        "logged_value": 53.6,
+        "delta": 0.26,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 318.43,
+      "center_error_px": 1.2268795472283682
+    },
+    {
+      "image": "R0135-perturbed.jpg",
+      "reading_id": "R0135",
+      "mission_id": "M023",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 53.6,
+      "rendered_value": 73.46029696311207,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 134.34745340852228,
+        "theta_max_deg": 404.3474534085223
+      },
+      "seed": 1301588871,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        58.20662049956833,
+        64.71644638076137,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 75.11,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0135",
+        "logged_value": 53.6,
+        "delta": 21.51,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 324.94,
+      "center_error_px": 1.5122125533002404
+    },
+    {
+      "image": "R0138-true.jpg",
+      "reading_id": "R0138",
+      "mission_id": "M014",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 128.8,
+      "rendered_value": 128.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 136.7853784777644,
+        "theta_max_deg": 406.7853784777644
+      },
+      "seed": 3175705852,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 128.08,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0138",
+        "logged_value": 128.8,
+        "delta": -0.72,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 204.61,
+      "center_error_px": null
+    },
+    {
+      "image": "R0138-perturbed.jpg",
+      "reading_id": "R0138",
+      "mission_id": "M014",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 128.8,
+      "rendered_value": 91.79616804783035,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 129.2412262246943,
+        "theta_max_deg": 399.2412262246943
+      },
+      "seed": 1552835320,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 92.13,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0138",
+        "logged_value": 128.8,
+        "delta": -36.67,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 207.71,
+      "center_error_px": null
+    },
+    {
+      "image": "R0141-true.jpg",
+      "reading_id": "R0141",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 51.7,
+      "rendered_value": 51.7,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 134.6683034149268,
+        "theta_max_deg": 404.6683034149268
+      },
+      "seed": 2140512402,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        46.00062002221649,
+        82.78580088797386,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 52.45,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0141",
+        "logged_value": 51.7,
+        "delta": 0.75,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 320.8,
+      "center_error_px": 0.871470443463221
+    },
+    {
+      "image": "R0141-perturbed.jpg",
+      "reading_id": "R0141",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 51.7,
+      "rendered_value": 68.10483080946601,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 131.398788957411,
+        "theta_max_deg": 401.398788957411
+      },
+      "seed": 3482034219,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        60.65961105981066,
+        103.63751491825181,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 68.19,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0141",
+        "logged_value": 51.7,
+        "delta": 16.49,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 372.9,
+      "center_error_px": 0.39606959603568825
+    },
+    {
+      "image": "R0143-true.jpg",
+      "reading_id": "R0143",
+      "mission_id": "M020",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 41.4,
+      "rendered_value": 41.4,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.83391402723568,
+        "theta_max_deg": 397.83391402723566
+      },
+      "seed": 381395495,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        81.8830653187102,
+        83.86744274608303,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 42.05,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0143",
+        "logged_value": 41.4,
+        "delta": 0.65,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 322.49,
+      "center_error_px": 1.6367397187718242
+    },
+    {
+      "image": "R0143-perturbed.jpg",
+      "reading_id": "R0143",
+      "mission_id": "M020",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 41.4,
+      "rendered_value": 69.5200633676599,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 141.39578740706978,
+        "theta_max_deg": 411.3957874070698
+      },
+      "seed": 3585430023,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        46.453075586263324,
+        89.1091992844086,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 68.85,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0143",
+        "logged_value": 41.4,
+        "delta": 27.45,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 319.88,
+      "center_error_px": 0.6721990134238178
+    },
+    {
+      "image": "R0144-true.jpg",
+      "reading_id": "R0144",
+      "mission_id": "M021",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 108.2,
+      "rendered_value": 108.2,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 138.97411405911245,
+        "theta_max_deg": 408.9741140591125
+      },
+      "seed": 358890808,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 107.08,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0144",
+        "logged_value": 108.2,
+        "delta": -1.12,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 211.98,
+      "center_error_px": null
+    },
+    {
+      "image": "R0144-perturbed.jpg",
+      "reading_id": "R0144",
+      "mission_id": "M021",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 108.2,
+      "rendered_value": 38.75794170691613,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 139.62145865378685,
+        "theta_max_deg": 409.6214586537868
+      },
+      "seed": 1630863861,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 37.61,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0144",
+        "logged_value": 108.2,
+        "delta": -70.59,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 215.85,
+      "center_error_px": null
+    },
+    {
+      "image": "R0146-true.jpg",
+      "reading_id": "R0146",
+      "mission_id": "M017",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 68.2,
+      "rendered_value": 68.2,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 139.35893133278338,
+        "theta_max_deg": 409.35893133278336
+      },
+      "seed": 3777516144,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        108.61172621351965,
+        90.0738589442899,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 69.65,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0146",
+        "logged_value": 68.2,
+        "delta": 1.45,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 338.27,
+      "center_error_px": 0.5765004185857233
+    },
+    {
+      "image": "R0146-perturbed.jpg",
+      "reading_id": "R0146",
+      "mission_id": "M017",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 68.2,
+      "rendered_value": 56.60941417992153,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.29063323313363,
+        "theta_max_deg": 397.29063323313363
+      },
+      "seed": 1989558799,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        63.44907073520314,
+        78.33511362593799,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 56.93,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0146",
+        "logged_value": 68.2,
+        "delta": -11.27,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 321.78,
+      "center_error_px": 0.8634795569224184
+    },
+    {
+      "image": "R0149-true.jpg",
+      "reading_id": "R0149",
+      "mission_id": "M015",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 39.8,
+      "rendered_value": 39.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 131.3842072710454,
+        "theta_max_deg": 401.3842072710454
+      },
+      "seed": 2262448568,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        47.06062185277381,
+        96.76085383944907,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 40.11,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0149",
+        "logged_value": 39.8,
+        "delta": 0.31,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 329.79,
+      "center_error_px": 0.5109773789662743
+    },
+    {
+      "image": "R0149-perturbed.jpg",
+      "reading_id": "R0149",
+      "mission_id": "M015",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 39.8,
+      "rendered_value": 61.378193338482376,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 135.8133916488383,
+        "theta_max_deg": 405.8133916488383
+      },
+      "seed": 4227335470,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        92.16944372650644,
+        94.87102783024417,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 61.4,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0149",
+        "logged_value": 39.8,
+        "delta": 21.6,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 324.32,
+      "center_error_px": 1.04183958158963
+    },
+    {
+      "image": "R0157-true.jpg",
+      "reading_id": "R0157",
+      "mission_id": "M005",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 74.3,
+      "rendered_value": 74.3,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 137.99785009735757,
+        "theta_max_deg": 407.99785009735757
+      },
+      "seed": 3857065570,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 73.94,
+        "unit": "psi",
+        "confidence": 0.45,
+        "trust": "low",
+        "flags": [
+          "SCALE_LABEL_INCONSISTENT"
+        ],
+        "logged_id": "R0157",
+        "logged_value": 74.3,
+        "delta": -0.36,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 200.95,
+      "center_error_px": null
+    },
+    {
+      "image": "R0157-perturbed.jpg",
+      "reading_id": "R0157",
+      "mission_id": "M005",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 74.3,
+      "rendered_value": 139.40154635811882,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 138.23249483459804,
+        "theta_max_deg": 408.232494834598
+      },
+      "seed": 3094801770,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 139.3,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0157",
+        "logged_value": 74.3,
+        "delta": 65.0,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 214.84,
+      "center_error_px": null
+    },
+    {
+      "image": "R0160-true.jpg",
+      "reading_id": "R0160",
+      "mission_id": "M013",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.1,
+      "rendered_value": 65.1,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 129.68623393322778,
+        "theta_max_deg": 399.68623393322775
+      },
+      "seed": 1589919667,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        72.83416243261298,
+        51.92499804419148,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 65.13,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0160",
+        "logged_value": 65.1,
+        "delta": 0.03,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 322.74,
+      "center_error_px": 0.5984390929246373
+    },
+    {
+      "image": "R0160-perturbed.jpg",
+      "reading_id": "R0160",
+      "mission_id": "M013",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.1,
+      "rendered_value": 53.21621776984598,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.54082750306476,
+        "theta_max_deg": 397.54082750306475
+      },
+      "seed": 2697356075,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        87.01317030550364,
+        75.4571580886894,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 54.11,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0160",
+        "logged_value": 65.1,
+        "delta": -10.99,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 328.61,
+      "center_error_px": 0.5430016552667292
+    },
+    {
+      "image": "R0164-true.jpg",
+      "reading_id": "R0164",
+      "mission_id": "M011",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 120.7,
+      "rendered_value": 120.7,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 133.71759343230752,
+        "theta_max_deg": 403.7175934323075
+      },
+      "seed": 3935939954,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 120.69,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0164",
+        "logged_value": 120.7,
+        "delta": -0.01,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 206.51,
+      "center_error_px": null
+    },
+    {
+      "image": "R0164-perturbed.jpg",
+      "reading_id": "R0164",
+      "mission_id": "M011",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 120.7,
+      "rendered_value": 68.1347404520127,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 134.22088305535596,
+        "theta_max_deg": 404.22088305535596
+      },
+      "seed": 1130400414,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 67.89,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0164",
+        "logged_value": 120.7,
+        "delta": -52.81,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 214.42,
+      "center_error_px": null
+    },
+    {
+      "image": "R0167-true.jpg",
+      "reading_id": "R0167",
+      "mission_id": "M010",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 53.9,
+      "rendered_value": 53.9,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 131.73594693202898,
+        "theta_max_deg": 401.735946932029
+      },
+      "seed": 2145429093,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        42.582889065361165,
+        106.73725223561264,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 53.84,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0167",
+        "logged_value": 53.9,
+        "delta": -0.06,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 334.32,
+      "center_error_px": 0.8693478497547412
+    },
+    {
+      "image": "R0167-perturbed.jpg",
+      "reading_id": "R0167",
+      "mission_id": "M010",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 53.9,
+      "rendered_value": 65.97899912216785,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.70741258424991,
+        "theta_max_deg": 397.7074125842499
+      },
+      "seed": 2181600621,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        114.81188609368067,
+        62.87529122787895,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 64.85,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0167",
+        "logged_value": 53.9,
+        "delta": 10.95,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 318.32,
+      "center_error_px": 0.9293878620011358
+    },
+    {
+      "image": "R0170-true.jpg",
+      "reading_id": "R0170",
+      "mission_id": "M018",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 132.5,
+      "rendered_value": 132.5,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 131.97328322457292,
+        "theta_max_deg": 401.9732832245729
+      },
+      "seed": 3194212670,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 132.72,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0170",
+        "logged_value": 132.5,
+        "delta": 0.22,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 212.41,
+      "center_error_px": null
+    },
+    {
+      "image": "R0170-perturbed.jpg",
+      "reading_id": "R0170",
+      "mission_id": "M018",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 132.5,
+      "rendered_value": 101.07706429166697,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 127.45533942666657,
+        "theta_max_deg": 397.45533942666657
+      },
+      "seed": 1711661925,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 102.24,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0170",
+        "logged_value": 132.5,
+        "delta": -30.26,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 218.09,
+      "center_error_px": null
+    },
+    {
+      "image": "R0176-true.jpg",
+      "reading_id": "R0176",
+      "mission_id": "M004",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 70.6,
+      "rendered_value": 70.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 140.52846230904117,
+        "theta_max_deg": 410.5284623090412
+      },
+      "seed": 717827929,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        104.67303944302185,
+        88.93964319645713,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 70.94,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0176",
+        "logged_value": 70.6,
+        "delta": 0.34,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 328.8,
+      "center_error_px": 0.9989311838532219
+    },
+    {
+      "image": "R0176-perturbed.jpg",
+      "reading_id": "R0176",
+      "mission_id": "M004",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 70.6,
+      "rendered_value": 51.88220708395172,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 133.37251662169453,
+        "theta_max_deg": 403.3725166216945
+      },
+      "seed": 112704145,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        62.349284745929694,
+        70.40841711716482,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 52.43,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0176",
+        "logged_value": 70.6,
+        "delta": -18.17,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 315.19,
+      "center_error_px": 0.8794320037065796
+    },
+    {
+      "image": "R0177-true.jpg",
+      "reading_id": "R0177",
+      "mission_id": "M019",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 77.6,
+      "rendered_value": 77.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 136.20828080398238,
+        "theta_max_deg": 406.2082808039824
+      },
+      "seed": 768295848,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        82.5906559810293,
+        111.01486101115142,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 77.55,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0177",
+        "logged_value": 77.6,
+        "delta": -0.05,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 336.98,
+      "center_error_px": 1.0306630794487608
+    },
+    {
+      "image": "R0177-perturbed.jpg",
+      "reading_id": "R0177",
+      "mission_id": "M019",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 77.6,
+      "rendered_value": 48.313287511527285,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 142.39132799016338,
+        "theta_max_deg": 412.3913279901634
+      },
+      "seed": 567061874,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        64.10417896600765,
+        100.57691518587185,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 49.46,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0177",
+        "logged_value": 77.6,
+        "delta": -28.14,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 346.91,
+      "center_error_px": 2.1142968051472555
+    },
+    {
+      "image": "R0179-true.jpg",
+      "reading_id": "R0179",
+      "mission_id": "M011",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 52.5,
+      "rendered_value": 52.5,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 139.91926580359535,
+        "theta_max_deg": 409.91926580359535
+      },
+      "seed": 2763357242,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        52.77986507111733,
+        116.71562612321068,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 53.75,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0179",
+        "logged_value": 52.5,
+        "delta": 1.25,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 361.12,
+      "center_error_px": 0.359621869071341
+    },
+    {
+      "image": "R0179-perturbed.jpg",
+      "reading_id": "R0179",
+      "mission_id": "M011",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 52.5,
+      "rendered_value": 80.96268279499918,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 141.68815598506598,
+        "theta_max_deg": 411.688155985066
+      },
+      "seed": 1752371407,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        93.56926872546313,
+        95.8565375824499,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 81.78,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0179",
+        "logged_value": 52.5,
+        "delta": 29.28,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 374.57,
+      "center_error_px": 1.1315054521302306
+    },
+    {
+      "image": "R0181-true.jpg",
+      "reading_id": "R0181",
+      "mission_id": "M027",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 125.5,
+      "rendered_value": 125.5,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 130.51712269375696,
+        "theta_max_deg": 400.51712269375696
+      },
+      "seed": 597928369,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 125.05,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0181",
+        "logged_value": 125.5,
+        "delta": -0.45,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 317.64,
+      "center_error_px": null
+    },
+    {
+      "image": "R0181-perturbed.jpg",
+      "reading_id": "R0181",
+      "mission_id": "M027",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 125.5,
+      "rendered_value": 76.22075308895441,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 133.1693590115346,
+        "theta_max_deg": 403.1693590115346
+      },
+      "seed": 933606316,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 76.51,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0181",
+        "logged_value": 125.5,
+        "delta": -48.99,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 264.24,
+      "center_error_px": null
+    },
+    {
+      "image": "R0183-true.jpg",
+      "reading_id": "R0183",
+      "mission_id": "M012",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 63.0,
+      "rendered_value": 63.0,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 130.75409651059272,
+        "theta_max_deg": 400.7540965105927
+      },
+      "seed": 3201217370,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        74.10323099995314,
+        54.26243744922327,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 62.57,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0183",
+        "logged_value": 63.0,
+        "delta": -0.43,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 392.15,
+      "center_error_px": 0.4624517325405224
+    },
+    {
+      "image": "R0183-perturbed.jpg",
+      "reading_id": "R0183",
+      "mission_id": "M012",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 63.0,
+      "rendered_value": 42.705011933206194,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 134.7183898169974,
+        "theta_max_deg": 404.7183898169974
+      },
+      "seed": 3261553264,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        55.9708360945166,
+        88.8672223897269,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 45.4,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0183",
+        "logged_value": 63.0,
+        "delta": -17.6,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 359.07,
+      "center_error_px": 93.13470306472801
+    },
+    {
+      "image": "R0186-true.jpg",
+      "reading_id": "R0186",
+      "mission_id": "M008",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 71.3,
+      "rendered_value": 71.3,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 131.51494566378284,
+        "theta_max_deg": 401.51494566378284
+      },
+      "seed": 2322615346,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        54.05363001787899,
+        81.2371429841975,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 71.08,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0186",
+        "logged_value": 71.3,
+        "delta": -0.22,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 389.53,
+      "center_error_px": 1.2155521254223594
+    },
+    {
+      "image": "R0186-perturbed.jpg",
+      "reading_id": "R0186",
+      "mission_id": "M008",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 71.3,
+      "rendered_value": 45.01881112858929,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 139.8266145036038,
+        "theta_max_deg": 409.8266145036038
+      },
+      "seed": 3629338991,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        67.21178460365925,
+        74.29757191361232,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 45.15,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0186",
+        "logged_value": 71.3,
+        "delta": -26.15,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 361.36,
+      "center_error_px": 1.055788202043792
+    },
+    {
+      "image": "R0187-true.jpg",
+      "reading_id": "R0187",
+      "mission_id": "M020",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 43.8,
+      "rendered_value": 43.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 138.6869144669072,
+        "theta_max_deg": 408.6869144669072
+      },
+      "seed": 1044990206,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        110.91110923281619,
+        65.16828719966014,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 44.15,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0187",
+        "logged_value": 43.8,
+        "delta": 0.35,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 378.67,
+      "center_error_px": 0.9277698979573991
+    },
+    {
+      "image": "R0187-perturbed.jpg",
+      "reading_id": "R0187",
+      "mission_id": "M020",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 43.8,
+      "rendered_value": 60.33290730605937,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 131.50808090117067,
+        "theta_max_deg": 401.5080809011707
+      },
+      "seed": 3310645346,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        49.353993859771705,
+        108.9989667258474,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 60.38,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0187",
+        "logged_value": 43.8,
+        "delta": 16.58,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 355.36,
+      "center_error_px": 0.8175318189653157
+    },
+    {
+      "image": "R0191-true.jpg",
+      "reading_id": "R0191",
+      "mission_id": "M023",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 137.0,
+      "rendered_value": 137.0,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 132.3232931784456,
+        "theta_max_deg": 402.32329317844557
+      },
+      "seed": 3739081736,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 137.81,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0191",
+        "logged_value": 137.0,
+        "delta": 0.81,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 236.9,
+      "center_error_px": null
+    },
+    {
+      "image": "R0191-perturbed.jpg",
+      "reading_id": "R0191",
+      "mission_id": "M023",
+      "split": "heldout",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 137.0,
+      "rendered_value": 69.27420832575369,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 139.07225333575883,
+        "theta_max_deg": 409.07225333575883
+      },
+      "seed": 1639551920,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 69.33,
+        "unit": "psi",
+        "confidence": 0.45,
+        "trust": "low",
+        "flags": [
+          "SCALE_LABEL_INCONSISTENT"
+        ],
+        "logged_id": "R0191",
+        "logged_value": 137.0,
+        "delta": -67.67,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 252.92,
+      "center_error_px": null
+    },
+    {
+      "image": "R0193-true.jpg",
+      "reading_id": "R0193",
+      "mission_id": "M016",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.3,
+      "rendered_value": 65.3,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 138.52726208407105,
+        "theta_max_deg": 408.5272620840711
+      },
+      "seed": 2186297595,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        78.2692959500833,
+        71.2688261801258,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 65.15,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0193",
+        "logged_value": 65.3,
+        "delta": -0.15,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 353.2,
+      "center_error_px": 1.033703808367799
+    },
+    {
+      "image": "R0193-perturbed.jpg",
+      "reading_id": "R0193",
+      "mission_id": "M016",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 65.3,
+      "rendered_value": 50.56452565741914,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 129.97427143900234,
+        "theta_max_deg": 399.97427143900234
+      },
+      "seed": 891208159,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        60.58152119299925,
+        63.962883412132555,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 51.13,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0193",
+        "logged_value": 65.3,
+        "delta": -14.17,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 368.95,
+      "center_error_px": 0.42012159311762953
+    },
+    {
+      "image": "R0196-true.jpg",
+      "reading_id": "R0196",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 59.1,
+      "rendered_value": 59.1,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 142.07576101550472,
+        "theta_max_deg": 412.0757610155047
+      },
+      "seed": 2051852236,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        113.12720741561702,
+        98.40621216705748,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 58.57,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0196",
+        "logged_value": 59.1,
+        "delta": -0.53,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 379.43,
+      "center_error_px": 0.7011121889694396
+    },
+    {
+      "image": "R0196-perturbed.jpg",
+      "reading_id": "R0196",
+      "mission_id": "M003",
+      "split": "train",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 59.1,
+      "rendered_value": 83.64588484380909,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 138.34582173338376,
+        "theta_max_deg": 408.34582173338373
+      },
+      "seed": 2293122711,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        89.0420009098776,
+        100.67750618738509,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 83.49,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0196",
+        "logged_value": 59.1,
+        "delta": 24.39,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 385.95,
+      "center_error_px": 0.5601476820695104
+    },
+    {
+      "image": "R0197-true.jpg",
+      "reading_id": "R0197",
+      "mission_id": "M012",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 82.8,
+      "rendered_value": 82.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 128.61677161670949,
+        "theta_max_deg": 398.61677161670946
+      },
+      "seed": 1664855283,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        101.46470460265854,
+        52.86605429193581,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 82.68,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0197",
+        "logged_value": 82.8,
+        "delta": -0.12,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 385.81,
+      "center_error_px": 0.8297158086887069
+    },
+    {
+      "image": "R0197-perturbed.jpg",
+      "reading_id": "R0197",
+      "mission_id": "M012",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 82.8,
+      "rendered_value": 56.09174644985475,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 140.19104302945726,
+        "theta_max_deg": 410.19104302945726
+      },
+      "seed": 1184028618,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        93.77393031635017,
+        80.01295705781946,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 56.09,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0197",
+        "logged_value": 82.8,
+        "delta": -26.71,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 384.62,
+      "center_error_px": 1.5120630046742942
+    },
+    {
+      "image": "R0200-true.jpg",
+      "reading_id": "R0200",
+      "mission_id": "M010",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 150.6,
+      "rendered_value": 150.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 135.66290579546268,
+        "theta_max_deg": 405.6629057954627
+      },
+      "seed": 4056611452,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 151.25,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0200",
+        "logged_value": 150.6,
+        "delta": 0.65,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 243.35,
+      "center_error_px": null
+    },
+    {
+      "image": "R0200-perturbed.jpg",
+      "reading_id": "R0200",
+      "mission_id": "M010",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 150.6,
+      "rendered_value": 93.23010166122299,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 135.75836746840864,
+        "theta_max_deg": 405.75836746840866
+      },
+      "seed": 397088342,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 92.45,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0200",
+        "logged_value": 150.6,
+        "delta": -58.15,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 227.54,
+      "center_error_px": null
+    },
+    {
+      "image": "R0216-true.jpg",
+      "reading_id": "R0216",
+      "mission_id": "M027",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 111.7,
+      "rendered_value": 111.7,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 127.73045492488609,
+        "theta_max_deg": 397.7304549248861
+      },
+      "seed": 1270016373,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 111.83,
+        "unit": "psi",
+        "confidence": 0.45,
+        "trust": "low",
+        "flags": [
+          "SCALE_LABEL_INCONSISTENT"
+        ],
+        "logged_id": "R0216",
+        "logged_value": 111.7,
+        "delta": 0.13,
+        "agrees": null,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 278.48,
+      "center_error_px": null
+    },
+    {
+      "image": "R0216-perturbed.jpg",
+      "reading_id": "R0216",
+      "mission_id": "M027",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 111.7,
+      "rendered_value": 68.65688843360489,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 131.17379570124643,
+        "theta_max_deg": 401.17379570124643
+      },
+      "seed": 4167214639,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 68.52,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0216",
+        "logged_value": 111.7,
+        "delta": -43.18,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 233.21,
+      "center_error_px": null
+    },
+    {
+      "image": "R0218-true.jpg",
+      "reading_id": "R0218",
+      "mission_id": "M012",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 53.6,
+      "rendered_value": 53.6,
+      "variant": "true",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 139.51634249381968,
+        "theta_max_deg": 409.5163424938197
+      },
+      "seed": 292822659,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        54.61604785251946,
+        117.34168400777014,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 54.61,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0218",
+        "logged_value": 53.6,
+        "delta": 1.01,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 380.76,
+      "center_error_px": 1.2202930752120014
+    },
+    {
+      "image": "R0218-perturbed.jpg",
+      "reading_id": "R0218",
+      "mission_id": "M012",
+      "split": "heldout",
+      "measurement_type": "TEMPERATURE_C",
+      "unit": "C",
+      "logged_value": 53.6,
+      "rendered_value": 66.01557019710302,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "°C",
+        "min_value": 25,
+        "max_value": 100,
+        "theta_min_deg": 127.99461990152791,
+        "theta_max_deg": 397.9946199015279
+      },
+      "seed": 889176913,
+      "renderer_version": "synth-1.0",
+      "hotspot_box": [
+        107.48114867517,
+        105.151148041224,
+        34,
+        34
+      ],
+      "row": {
+        "id": "V1",
+        "tool": "vision.thermal",
+        "quantity": "max_temperature",
+        "value": 65.28,
+        "unit": "°C",
+        "confidence": 0.8,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0218",
+        "logged_value": 53.6,
+        "delta": 11.68,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 352.16,
+      "center_error_px": 1.3261250582149788
+    },
+    {
+      "image": "R0219-true.jpg",
+      "reading_id": "R0219",
+      "mission_id": "M010",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 93.8,
+      "rendered_value": 93.8,
+      "variant": "true",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 134.99072523794436,
+        "theta_max_deg": 404.9907252379444
+      },
+      "seed": 1669810962,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 94.01,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0219",
+        "logged_value": 93.8,
+        "delta": 0.21,
+        "agrees": true,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 219.22,
+      "center_error_px": null
+    },
+    {
+      "image": "R0219-perturbed.jpg",
+      "reading_id": "R0219",
+      "mission_id": "M010",
+      "split": "train",
+      "measurement_type": "PRESSURE_PSI",
+      "unit": "psi",
+      "logged_value": 93.8,
+      "rendered_value": 142.46274851223308,
+      "variant": "perturbed",
+      "calibration": {
+        "unit": "psi",
+        "min_value": 0,
+        "max_value": 200,
+        "theta_min_deg": 132.9720795239146,
+        "theta_max_deg": 402.9720795239146
+      },
+      "seed": 339274955,
+      "renderer_version": "synth-1.0",
+      "row": {
+        "id": "V1",
+        "tool": "vision.gauge",
+        "quantity": "pressure",
+        "value": 142.8,
+        "unit": "psi",
+        "confidence": 0.85,
+        "trust": "high",
+        "flags": [],
+        "logged_id": "R0219",
+        "logged_value": 93.8,
+        "delta": 49.0,
+        "agrees": false,
+        "pairing": "synthetic"
+      },
+      "latency_ms": 262.23,
+      "center_error_px": null
+    }
+  ]
+}
