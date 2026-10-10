@@ -17,7 +17,16 @@ def read(image, words, calibration=None, asset_id=None):
             candidates.append((len(np.unique(image[ys, x]//16, axis=0)), x, ys))
     if not candidates:
         return dict(value=None, confidence=0., flags=['UNREADABLE'], box=None, reference=None, delta_t=None)
-    _, x, ys = max(candidates, key=lambda item: item[0])
+    # Colour bars are narrow strips separated from the scene. Choose the
+    # rightmost contiguous candidate strip, then sample its centre, not a
+    # scene column with more colours (which can extrapolate beyond labels).
+    groups = []
+    for candidate in candidates:
+        if not groups or candidate[1] > groups[-1][-1][1] + 1:
+            groups.append([])
+        groups[-1].append(candidate)
+    strip = groups[-1]
+    _, x, ys = strip[len(strip)//2]
     y0, y1 = int(ys[0])+2, int(ys[-1])-2
     lut = np.median(image[y0:y1+1, max(0,x-1):x+2], axis=1).astype(float)
     ticks = []

@@ -59,7 +59,9 @@ def test_kit_expectations():
     for name,action in [('thermal_pump_bearing_01.jpg','THERMAL_INSPECTION'),('gauge_pressure_01.jpg','GAUGE_READING')]:
         response=client.post('/v1/vision',json=dict(image_b64=base64.b64encode((folder/name).read_bytes()).decode(),action_type=action)).json()
         row=response['vision'][0]
-        if name.startswith('thermal'):assert 'CLIPPED' in row['flags']
+        if name.startswith('thermal'):
+            assert 'CLIPPED' in row['flags']
+            assert 97 <= row['value'] <= 101
         else:assert row['confidence']<.5 or 'SCALE_LABEL_INCONSISTENT' in row['flags']
 
 def test_unreadable_and_ocr():
