@@ -66,11 +66,12 @@ def normalize_unit(unit):
 
 def row(result,quantity,unit,logged=None,pairing='demo',index=1):
     value=result['value'];conf=result['confidence']
-    comparable=logged is not None and ((unit=='°C' and logged.measurement_type=='TEMPERATURE_C' and normalize_unit(logged.unit)=="°C") or
-                                      (unit=='psi' and logged.measurement_type=='PRESSURE_PSI' and normalize_unit(logged.unit)=='psi'))
+    canonical_unit=normalize_unit(unit)
+    comparable=logged is not None and ((canonical_unit=='°C' and logged.measurement_type=='TEMPERATURE_C' and normalize_unit(logged.unit)=="°C") or
+                                      (canonical_unit=='psi' and logged.measurement_type=='PRESSURE_PSI' and normalize_unit(logged.unit)=='psi'))
     delta=round(value-logged.value,2) if value is not None and comparable else None
-    tolerance=config.THERMAL_TOLERANCE if unit=='°C' else config.GAUGE_TOLERANCE
-    return dict(id=f'V{index}',tool=f"vision.{'thermal' if unit=='°C' else 'gauge'}",quantity=quantity,value=value,unit=unit,
+    tolerance=config.THERMAL_TOLERANCE if canonical_unit=='°C' else config.GAUGE_TOLERANCE
+    return dict(id=f'V{index}',tool=f"vision.{'thermal' if canonical_unit=='°C' else 'gauge'}",quantity=quantity,value=value,unit=unit,
                 confidence=conf,trust='high' if conf>=.5 else 'low',flags=result['flags'],
                 logged_id=logged.reading_id if logged else None,logged_value=logged.value if logged else None,
                 delta=delta,agrees=abs(delta)<=tolerance if delta is not None and conf>=.5 else None,pairing=pairing)

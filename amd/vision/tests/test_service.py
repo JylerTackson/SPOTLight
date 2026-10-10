@@ -87,3 +87,4 @@ def test_psi_unit_normalization(unit):
     measured=dict(value=100,confidence=.8,flags=[])
     logged=app.Logged(reading_id='R1',measurement_type='PRESSURE_PSI',value=100,unit=unit)
     assert app.row(measured,'pressure','psi',logged)['agrees'] is True
+    assert app.row(measured,'pressure','PSI',logged)['agrees'] is True
