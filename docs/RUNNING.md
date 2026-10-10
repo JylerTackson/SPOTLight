@@ -193,3 +193,37 @@ the box instead, tunnel llama-server (`ssh -N -L 18080:127.0.0.1:8080 <amd-box>`
 Concurrency: `llama-server -np 1` runs one generation at a time, so concurrent explains queue and can hit the 15 s
 deadline and fall back to the template. That is why the dashboard reads precomputed explanations and live explain
 is for one flag at a time.
+
+## CPU vision and OCR (:8084)
+
+The `vision` service runs in local, hybrid and neon profiles. It has no torch/GPU dependency.
+
+```bash
+docker compose --profile local up -d --build --no-deps --wait vision
+curl http://127.0.0.1:8084/health
+make vision-venv
+make test-vision
+```
+
+Native venv on the AMD VM (no Docker/root required), from repository root:
+
+```bash
+python3.12 -m venv amd/vision/.venv
+amd/vision/.venv/bin/pip install -r amd/vision/requirements-dev.txt
+VISION_HOST=0.0.0.0 VISION_PORT=8084 amd/vision/.venv/bin/python amd/vision/app.py
+```
+
+In another terminal, generate images and service-produced training evidence:
+
+```bash
+amd/vision/.venv/bin/python amd/vision/scripts/render_synth.py --with-vision-rows --service-url http://127.0.0.1:8084
+amd/vision/.venv/bin/python amd/vision/scripts/eval_readers.py
+```
+
+Outputs: `amd/vision/data/synth/manifest.jsonl`, JPEGs and `*.jpg.vision.json`.
+Use only manifest `split=train` rows for training; heldout missions are read from
+`amd/system1/data/manifest.json`. Kit images are eval/demo only and are never copied into renders.
+Responses include the annotated JPEG base64; use that image for the fine-tuner.
+`VISION_LLAMA_URL` is reserved and unused. Configuration and low-trust semantics:
+[vision-contract.md](vision-contract.md). Synthetic results are in
+`amd/vision/results/readers/report.md`; real-world accuracy is unverified.

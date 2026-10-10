@@ -10,6 +10,7 @@
 #                                           (seed is non-destructive: never overwrites flags or refills a demo)
 # embed      8081  local, models            Qwen3-Embedding-0.6B, OpenAI-compatible /v1/embeddings (TORCH_VARIANT)
 # system1    8082  local, models            Laya triage model, /v1/predict (TORCH_VARIANT; fine-tune mount)
+# vision     8084  local, hybrid, neon      CPU thermal/gauge readers and RapidOCR, /v1/vision
 # mcp        8090  local, hybrid, neon      MCP context server for System 2 (streamable HTTP /mcp)
 # backend    8000  local, hybrid, neon      FastAPI dashboard API (/api/v1, /docs). ADMIN_TOKEN (header
 #                                           X-Admin-Token) guards /ops, /replay, POST /events; CORS_ORIGINS only
@@ -20,7 +21,7 @@
 #
 # Profiles:
 #   local   everything in Docker on CPU (testing; Laya ~3-8 s per event, embedding ~2.3 s per query)
-#   hybrid  db + db-init + mcp + backend + system2 in Docker; SYSTEM1_URL / EMBED_URL in .env point at the AMD GPU box,
+#   hybrid  db + db-init + mcp + backend + system2 + vision in Docker; SYSTEM1_URL / EMBED_URL in .env point at the AMD GPU box,
 #           where system1 and embed run natively (the AMD Jupyter VMs have no root and can't run Docker)
 #   neon    Neon replaces `db`: DATABASE_URL (owner, db-init), BACKEND_DATABASE_URL, MCP_DATABASE_URL in .env
 #   system2 System 2 only, for independent integration checks (stub; live when SYSTEM2_LLAMA_URL is set)
@@ -159,6 +160,22 @@ services:
     ports: ["${BIND_ADDR:-127.0.0.1}:8083:8083"]
     volumes: ["./amd/system1/data/kit:/app/kit:ro"]
     # Non-root runtime and healthcheck are inherited from the image.
+
+  vision:
+    <<: *service
+    build: {context: amd/vision}
+    image: spot-vision:compose
+    profiles: [local, hybrid, neon]
+    environment:
+      VISION_HOST: ${VISION_HOST:-0.0.0.0}
+      VISION_PORT: "8084"
+      VISION_MAX_PIXELS: ${VISION_MAX_PIXELS:-16000000}
+      VISION_THERMAL_TOLERANCE_C: ${VISION_THERMAL_TOLERANCE_C:-4}
+      VISION_GAUGE_TOLERANCE_PSI: ${VISION_GAUGE_TOLERANCE_PSI:-6}
+      VISION_CACHE_SIZE: ${VISION_CACHE_SIZE:-64}
+      VISION_LOG_LEVEL: ${VISION_LOG_LEVEL:-info}
+      VISION_LLAMA_URL: ${VISION_LLAMA_URL:-}
+    ports: ["${BIND_ADDR:-127.0.0.1}:8084:8084"]
 
   # ── application ────────────────────────────────────────────────────────────────────────────────
   mcp:

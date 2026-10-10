@@ -4,11 +4,13 @@
 DB_PORT ?= $(or $(shell sed -n 's/^DB_PORT=\([0-9][0-9]*\).*/\1/p' .env 2>/dev/null),5433)
 PY_BACKEND ?= backend/.venv/bin/python
 PY_SYSTEM1 ?= amd/system1/.venv/bin/python
+PYTHON_VISION ?= python3.12
+PY_VISION  ?= amd/vision/.venv/bin/python
 PY_MCP     ?= amd/mcp/.venv/bin/python
 LOCAL_DB   ?= postgresql://postgres:postgres@localhost:$(DB_PORT)/spot
 
 .PHONY: help up down wipe ps logs test test-policy test-backend test-backend-integration test-system1 \
-        test-system1-fast test-mcp test-db smoke e2e e2e-serial e2e-parallel venvs
+        test-system1-fast test-vision vision-venv test-mcp test-db smoke e2e e2e-serial e2e-parallel venvs
 
 help:
 	@grep -E '^[a-z0-9-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /\t/'
@@ -28,7 +30,7 @@ ps:
 logs:
 	docker compose logs -f --tail 50
 
-test: test-policy test-backend test-system1 test-mcp ## all unit suites + the cross-service policy drift guard
+test: test-policy test-backend test-system1 test-mcp test-vision ## all unit suites + the cross-service policy drift guard
 
 test-policy: ## policy.py vs db/policy_rules.py vs backend validator vs MCP vendored copy, on all 297 kit events
 	$(PY_BACKEND) -m pytest tests/test_policy_consistency.py -q -p no:cacheprovider
@@ -44,6 +46,9 @@ test-system1: ## system1 service tests (loads real base Laya on CPU, ~20 s)
 
 test-system1-fast:
 	cd amd/system1 && SYSTEM1_SKIP_MODEL=1 .venv/bin/python -m pytest service/tests -q
+
+test-vision: ## CPU vision readers, API, OCR, kit checks and deterministic renderer
+	cd amd/vision && $(abspath $(PY_VISION)) -m pytest tests -q
 
 test-mcp: ## MCP unit tests (integration tests skip without DATABASE_URL + EMBED_URL)
 	cd amd/mcp && .venv/bin/python -m pytest -q -p no:cacheprovider
@@ -63,8 +68,14 @@ e2e-serial:
 e2e-parallel:
 	DB_PORT=$(DB_PORT) E2E_MODES=parallel $(PY_BACKEND) scripts/e2e.py
 
-venvs: ## create the per-service test venvs (CPU torch for system1)
+venvs: vision-venv ## create the per-service test venvs (CPU torch for system1)
 	test -x $(PY_BACKEND) || (python3 -m venv backend/.venv && backend/.venv/bin/pip install -r backend/requirements-dev.txt)
 	test -x $(PY_MCP) || (python3 -m venv amd/mcp/.venv && amd/mcp/.venv/bin/pip install -r amd/mcp/requirements.txt pytest anyio)
 	test -x $(PY_SYSTEM1) || (python3 -m venv amd/system1/.venv && amd/system1/.venv/bin/pip install torch \
 	  && amd/system1/.venv/bin/pip install -r amd/system1/service/requirements-dev.txt)
+
+
+# Vision has no torch dependency.
+vision-venv: ## create the CPU vision development environment
+	test -x $(PY_VISION) || $(PYTHON_VISION) -m venv amd/vision/.venv
+	$(PY_VISION) -m pip install -r amd/vision/requirements-dev.txt

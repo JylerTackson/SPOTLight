@@ -9,6 +9,7 @@ Companion to `docs/system2-rag-contract.md` (Neon tables, embedding API, MCP). *
 | System 1: Laya inference | `amd/system1/service/` | 8082 | System 1 service agent |
 | Embedding service | `amd/embed/` | 8081 | pgvector agent |
 | MCP server | `amd/mcp/` | 8090 | MCP agent |
+| Vision (CPU thermal/gauge + OCR, `/v1/vision`) | `amd/vision/` | 8084 | vision-service |
 | System 2 (LLM explainer, `/v1/assess`) | `amd/system2/` (branch `aatif/system2`) | 8083 | teammate |
 | llama-server (System 2's model) | n/a | 8080 | teammate |
 | Postgres + pgvector (local stand-in for Neon) | `db/` | 5433 | pgvector agent |
