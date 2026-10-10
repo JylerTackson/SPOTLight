@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from textaxes import parse_num, calibrate_axis
 
-VERSION = 'thermal-1.0'
+VERSION = 'thermal-1.1'
 
 def read(image, words, calibration=None, asset_id=None):
     h, w = image.shape[:2]
@@ -48,7 +48,10 @@ def read(image, words, calibration=None, asset_id=None):
         indices.extend(d.argmin(axis=1)); distances.extend(d.min(axis=1))
     values = (a*(np.asarray(indices)+y0)+b).reshape(scene.shape[:2]).astype(np.float32)
     valid = (np.asarray(distances).reshape(values.shape)<65**2) & (hsv[:,:scene.shape[1],1]>45)
-    values = cv2.blur(values, (5,5))
+    weights = cv2.blur(valid.astype(np.float32), (5,5))
+    values = cv2.blur(np.where(valid, values, 0), (5,5))/np.maximum(weights, .001)
+    valid &= weights > .85
+    valid[:5] = False; valid[-5:] = False; valid[:, :5] = False; valid[:, -5:] = False
     if valid.mean()<.15:
         return dict(value=None, confidence=0., flags=['UNREADABLE'], box=None, reference=None, delta_t=None)
     maximum = float(np.max(values[valid]))

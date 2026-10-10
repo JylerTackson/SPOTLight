@@ -24,7 +24,8 @@ Each vision row has exactly these fields:
 Absent measurement/log/comparable units yields null value/delta/agrees as applicable.
 Confidence <0.5 means low trust and null agrees. Otherwise trust is high and
 `agrees = abs(delta) <= tolerance`: VISION_THERMAL_TOLERANCE_C=4,
-VISION_GAUGE_TOLERANCE_PSI=6. Non-psi gauge comparisons remain null.
+VISION_GAUGE_TOLERANCE_PSI=6. Unit comparisons normalize C, °C, degC and celsius to °C (case-insensitive);
+psi is case-insensitive. Non-psi gauge comparisons remain null.
 Low-trust rows must never be stated as fact downstream. Thermal reference and delta-T
 rows have no logged pairing; only the maximum is compared. Flags include CLIPPED,
 UNREADABLE, SCALE_LABEL_INCONSISTENT, AMBIGUOUS_NEEDLE and DEFAULT_CALIBRATION.
